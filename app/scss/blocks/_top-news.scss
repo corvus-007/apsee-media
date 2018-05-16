@@ -1,10 +1,15 @@
 .top-news {
+  padding-top: $gutter;
+}
+
+.top-news__inner {
+  @include make-container();
+
   display: flex;
-  flex-grow: 1;
 }
 
 .top-news__carousel {
-  width: 70%;
+  width: 65%;
   margin-right: $gutter;;
   flex-shrink: 0;
 }

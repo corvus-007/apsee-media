@@ -1,0 +1,11 @@
+.sidebar {
+  outline: 1px solid #3490DE;
+}
+
+.sidebar__module {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -4,10 +4,11 @@ html {
 
 body {
   margin: 0;
-  font-family: $primary-font;
+  // font-family: $primary-font;
+  font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.4;
   background-color: #dce4e9;
   color: $base-color;
   text-rendering: optimizeLegibility;

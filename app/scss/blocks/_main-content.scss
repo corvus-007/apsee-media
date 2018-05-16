@@ -1,0 +1,11 @@
+.main-content {
+  outline: 1px solid #FF2E63;
+}
+
+.main-content__section {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
