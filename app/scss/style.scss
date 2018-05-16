@@ -1,0 +1,31 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "mixins-containers";
+
+// Global
+@import "global/fonts";
+@import "global/base";
+@import "global/layout";
+
+// Vendors
+@import "../../node_modules/flickity/dist/flickity";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+
+// Blocks
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/popup";
+@import "blocks/common-section";
+@import "blocks/main-header";
+@import "blocks/header-actions";
+@import "blocks/main-nav";
+@import "blocks/main-layout";
+@import "blocks/common-block";
+@import "blocks/top-news";
+@import "blocks/top-news-carousel";
+@import "blocks/top-news-items";
+@import "blocks/top-news-item";
+@import "blocks/hamburger-menu";
+@import "blocks/main-footer";
+@import "blocks/socials";

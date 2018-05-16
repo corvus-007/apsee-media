@@ -1,0 +1,15 @@
+.main-layout {
+  @include make-container();
+
+  display: flex;
+  padding-top: $gutter;
+}
+
+.main-layout__main {
+  flex-grow: 1;
+}
+
+.main-layout__sidebar {
+  flex-shrink: 0;
+  width: 20%;
+}

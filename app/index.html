@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Home – APSEE MEDIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  @@include('blocks/main-header.html')
+  @@include('blocks/main-nav.html')
+
+  <div class="main-layout">
+    <section class="top-news">
+      <h2 class="visuallyhidden">Top news</h2>
+      <div class="top-news__carousel top-news-carousel">
+        <a class="top-news-carousel__item top-news-item" href="">top news #1</a>
+        <a class="top-news-carousel__item top-news-item" href="">top news #2</a>
+        <a class="top-news-carousel__item top-news-item" href="">top news #3</a>
+      </div>
+      <div class="top-news__items top-news-items">
+        <a class="top-news-items__item top-news-item" href="">top news #4</a>
+        <a class="top-news-items__item top-news-item" href="">top news #5</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="main-layout">
+    <main class="main-layout__main main-content">
+      <section class="politics-news common-block"></section>
+    </main>
+    <aside class="main-layout__sidebar">
+
+    </aside>
+  </div>
+
+
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.top-news {
+  display: flex;
+  flex-grow: 1;
+}
+
+.top-news__carousel {
+  width: 70%;
+  margin-right: $gutter;;
+  flex-shrink: 0;
+}
+
+.top-news__items {
+  flex-grow: 1;
+}
