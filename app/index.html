@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <title>Home – APSEE MEDIA</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,8 +16,8 @@
   @@include('blocks/main-header.html')
   @@include('blocks/main-nav.html')
 
-  <div class="main-layout">
-    <section class="top-news">
+  <section class="top-news">
+    <div class="top-news__inner">
       <h2 class="visuallyhidden">Top news</h2>
       <div class="top-news__carousel top-news-carousel">
         <a class="top-news-carousel__item top-news-item" href="">top news #1</a>
@@ -27,19 +28,139 @@
         <a class="top-news-items__item top-news-item" href="">top news #4</a>
         <a class="top-news-items__item top-news-item" href="">top news #5</a>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <div class="main-layout">
     <main class="main-layout__main main-content">
-      <section class="politics-news common-block"></section>
-    </main>
-    <aside class="main-layout__sidebar">
+      <section class="main-content__section politics-news common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Politics and geopolitics</h2>
+        </div>
+        <div class="common-block-body">
+          <ul class="news-preview-items">
+            <li class="news-preview-items__item news-preview">
+              <div class="news-preview__imagebox">
+                <img class="news-preview__image" src="https://images.unsplash.com/photo-1506108198627-b100e11bbc47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec77747e2fa7b03bb394aa4e78c4434b&auto=format&fit=crop&w=1050&q=80" alt="President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form">
+              </div>
+              <div class="news-preview__body">
+                <time class="news-preview__date" datetime="2018-03-15">15 march 2018</time>
+                <h3 class="news-preview__title">President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form</h3>
+                <div class="news-preview__text">
+                  <p>"It's not a loan, but he reported it any way," Rudy Giuliani insisted to the Daily News.</p>
+                </div>
+                <div class="news-preview__meta">
+                  <div class="news-preview__meta-item news-preview__comments-count comments-count">
+                    <svg class="comments-count__icon" width="32" height="32">
+                      <use xlink:href=""></use>
+                    </svg>
+                    22
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-preview-items__item news-preview">
+              <div class="news-preview__imagebox">
+                <img class="news-preview__image" src="https://images.unsplash.com/photo-1517366436424-8666f2ab3e44?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88bd5d3a40651b07a5086deb8507bca3&auto=format&fit=crop&w=1013&q=80" alt="EPA boss Scott Pruitt claims he doesn't recall asking security to use lights, sirens to zip through D.C. traffic">
+              </div>
+              <div class="news-preview__body">
+                <time class="news-preview__date" datetime="2018-03-15">15 march 2018</time>
+                <h3 class="news-preview__title">EPA boss Scott Pruitt claims he doesn't recall asking security to use lights, sirens to zip through D.C. traffic</h3>
+                <div class="news-preview__text">
+                  <p>EPA chief Pruitt said he doesn’t remember asking his security to use lights and sirens to speed his government-owned SUV through traffic.</p>
+                </div>
+                <div class="news-preview__meta">
+                  <div class="news-preview__meta-item news-preview__comments-count comments-count">
+                    <svg class="comments-count__icon" width="32" height="32">
+                      <use xlink:href=""></use>
+                    </svg>
+                    22
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-preview-items__item news-preview">
+              <div class="news-preview__imagebox">
+                <img class="news-preview__image" src="https://images.unsplash.com/photo-1516876617270-291a72282e2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69a79b43d8f9e7955700865783aaf00e&auto=format&fit=crop&w=925&q=80" alt="EPA boss Scott Pruitt claims he doesn't recall asking security to use lights, sirens to zip through D.C. traffic">
+              </div>
+              <div class="news-preview__body">
+                <time class="news-preview__date" datetime="2018-05-16">16 may 2018</time>
+                <h3 class="news-preview__title">EPA boss Scott Pruitt claims he doesn't recall asking security to use lights, sirens to zip through D.C. traffic</h3>
+                <div class="news-preview__text">
+                  <p>A top Senate panel agreed Wednesday with the intelligence community that Russia sought to sway the 2016 presidential election in President Trump's favor.</p>
+                </div>
+                <div class="news-preview__meta">
+                  <div class="news-preview__meta-item news-preview__comments-count comments-count">
+                    <svg class="comments-count__icon" width="32" height="32">
+                      <use xlink:href=""></use>
+                    </svg>
+                    22
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="news-preview-items__item news-preview">
+              <div class="news-preview__imagebox">
+                <img class="news-preview__image" src="https://images.unsplash.com/photo-1459292414836-763d35c7ae4c?ixlib=rb-0.3.5&s=bd02951bae92abbc4f5aad65b08f0a74&auto=format&fit=crop&w=1050&q=80" alt="Gina Haspel could become CIA's first female director with full Senate approval">
+              </div>
+              <div class="news-preview__body">
+                <time class="news-preview__date" datetime="2018-05-16">16 may 2018</time>
+                <h3 class="news-preview__title">Gina Haspel could become CIA's first female director with full Senate approval</h3>
+                <div class="news-preview__text">
+                  <p>The Senate Intelligence Committee voted Wednesday to advance President Donald Trump's pick for CIA director.</p>
+                </div>
+                <div class="news-preview__meta">
+                  <div class="news-preview__meta-item news-preview__comments-count comments-count">
+                    <svg class="comments-count__icon" width="32" height="32">
+                      <use xlink:href=""></use>
+                    </svg>
+                    22
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section class="main-content__section politics-news common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Business</h2>
+        </div>
+        <div class="common-block-body">Business body</div>
+      </section>
+
+      <section class="main-content__section politics-news common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Science and society</h2>
+        </div>
+        <div class="common-block-body">Science and society body</div>
+      </section>
+    </main>
+
+    <aside class="main-layout__sidebar sidebar">
+      <div class="sidebar__module common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Video</h2>
+        </div>
+        <div class="common-block-body">Video body</div>
+      </div>
+
+      <div class="sidebar__module common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Recommended</h2>
+        </div>
+        <div class="common-block-body">Recommended body</div>
+      </div>
+
+      <div class="sidebar__module common-block">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Forum</h2>
+        </div>
+        <div class="common-block-body">Forum body</div>
+      </div>
     </aside>
   </div>
-
-
 
   @@include('blocks/main-footer.html')
   @@include('blocks/site-scripts.html')
