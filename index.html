@@ -13,21 +13,121 @@
 
 <body>
 
-  @@include('blocks/main-header.html')
-  @@include('blocks/main-nav.html')
+  <header class="main-header">
+    <div class="main-header__inner">
+      <div class="main-header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="http://placehold.it/290x80/F38181/fff" alt="logo of assotiation of the peoples of south-eastern europe">
+        </a>
+      </div>
+      <button class="main-header__toggle main-nav-toggle" type="button">Open menu</button>
+      <p class="main-header__phrase">assotiation of the peoples of south-eastern europe</p>
+      <div class="main-header__actions header-actions">
+        <button class="header-actions__item user" type="button">user</button>
+        <button class="header-actions__item search" type="button">search</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="main-nav__inner">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Politics and geopolitics</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Business</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Science and Society</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Opinion</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Forum</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">About us</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Contact info</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
 
   <section class="top-news">
     <div class="top-news__inner">
       <h2 class="visuallyhidden">Top news</h2>
       <div class="top-news__carousel top-news-carousel">
-        <a class="top-news-carousel__item top-news-item" href="">top news #1</a>
-        <a class="top-news-carousel__item top-news-item" href="">top news #2</a>
-        <a class="top-news-carousel__item top-news-item" href="">top news #3</a>
+        <div class="top-news-carousel__item top-news-item">
+          <a href="" class="top-news-item__wraplink">
+            <div class="top-news-item__imagebox">
+              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1502352483654-33ffd4275714?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f17833a657c223e20b7b0a3e7513334a&auto=format&fit=crop&w=1050&q=80" alt="‘The gorilla in the room’: Inside Trump’s failed efforts to meet Putin in 2013">
+            </div>
+            <span class="top-news-item__rubric">Science and society</span>
+            <div class="top-news-item__body">
+              <time class="top-news-item__date" datetime="2018-06-11">11, june 2018</time>
+              <h2 class="top-news-item__title">‘The gorilla in the room’: Inside Trump’s failed efforts to meet Putin in 2013</h2>
+            </div>
+          </a>
+        </div>
+        <div class="top-news-carousel__item top-news-item">
+          <a href="" class="top-news-item__wraplink">
+            <div class="top-news-item__imagebox">
+              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=15be9f9073988c075caa018991009b74&auto=format&fit=crop&w=1050&q=80" alt="Why are House Republicans bucking their leadership on immigration?">
+            </div>
+            <span class="top-news-item__rubric">Science and society</span>
+            <div class="top-news-item__body">
+              <time class="top-news-item__date" datetime="2018-06-10">10, june 2018</time>
+              <h2 class="top-news-item__title">Why are House Republicans bucking their leadership on immigration?s</h2>
+            </div>
+          </a>
+        </div>
+        <div class="top-news-carousel__item top-news-item">
+          <a href="" class="top-news-item__wraplink">
+            <div class="top-news-item__imagebox">
+              <img class="top-news-item__image" src="https://images.unsplash.com/reserve/OnRKhvlFQ2uJNSx5O3cc_DSC00560.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a45195751c565c1d11ba20aa843ba48&auto=format&fit=crop&w=1053&q=80" alt="Trump’s long history of referring to nonwhite criminals as ‘animals’">
+            </div>
+            <span class="top-news-item__rubric">Science and society</span>
+            <div class="top-news-item__body">
+              <time class="top-news-item__date" datetime="2018-06-09">9, june 2018</time>
+              <h2 class="top-news-item__title">Trump’s long history of referring to nonwhite criminals as ‘animals’</h2>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="top-news__items top-news-items">
-        <a class="top-news-items__item top-news-item" href="">top news #4</a>
-        <a class="top-news-items__item top-news-item" href="">top news #5</a>
-      </div>
+      <ul class="top-news__items top-news-items">
+        <li class="top-news-items__item top-news-item">
+          <a href="" class="top-news-item__wraplink">
+            <div class="top-news-item__imagebox">
+              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1523357585206-175e971f2ad9?ixlib=rb-0.3.5&s=c69807415f2ffe608318195ce16c2a54&auto=format&fit=crop&w=1053&q=80" alt="McConnell warns control of the Senate is ‘absolutely’ in play in midterm elections">
+            </div>
+            <span class="top-news-item__rubric">Science and society</span>
+            <div class="top-news-item__body">
+              <time class="top-news-item__date" datetime="2018-06-08">8, june 2018</time>
+              <h2 class="top-news-item__title">McConnell warns control of the Senate is ‘absolutely’ in play in midterm elections</h2>
+            </div>
+          </a>
+        </li>
+        <li class="top-news-items__item top-news-item">
+          <a href="" class="top-news-item__wraplink">
+            <div class="top-news-item__imagebox">
+              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1522431266699-83e4a2a82b16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b843e6eeabf0c8989d4c64b1d51251da&auto=format&fit=crop&w=1050&q=80" alt="Why hasn’t Trump attacked Michael Avenatti?">
+            </div>
+            <span class="top-news-item__rubric">Science and society</span>
+            <div class="top-news-item__body">
+              <time class="top-news-item__date" datetime="2018-06-08">8, june 2018</time>
+              <h2 class="top-news-item__title">Why hasn’t Trump attacked Michael Avenatti?</h2>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -160,13 +260,13 @@
           <ul class="feed-video">
             <li class="feed-video__item">
               <div class="feed-video__imagebox">
-                <img class="feed-video__image" src="https://m.wsj.net/video/20180516/051618anwarrelease/051618anwarrelease_115x65.jpg" alt="">
+                <img class="feed-video__image" src="https://images.unsplash.com/photo-1491822486797-ccc854cc2345?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6812187e8634d4fe1e2e7ebba3ff0f6e&auto=format&fit=crop&w=1050&q=80" alt="">
               </div>
               <h3 class="feed-video__title">Malaysia’s Anwar Ibrahim Freed From Detention, Pardoned</h3>
             </li>
             <li class="feed-video__item">
               <div class="feed-video__imagebox">
-                <img class="feed-video__image" src="https://m.wsj.net/video/20180516/tradeworkers_10/tradeworkers_10_115x65.jpg" alt="">
+                <img class="feed-video__image" src="https://images.unsplash.com/photo-1520351497804-e95d64a88431?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c494fc4e262c01ffe49de982db00cc0&auto=format&fit=crop&w=1142&q=80" alt="">
               </div>
               <h3 class="feed-video__title">What the U.S.-China Trade War Means for Workers on the Ground</h3>
             </li>
@@ -190,8 +290,64 @@
     </aside>
   </div>
 
-  @@include('blocks/main-footer.html')
-  @@include('blocks/site-scripts.html')
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <div class="main-footer__nav footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Home</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Politics and geopolitics</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Business</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Science and Society</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Opinion</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Forum</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">About us</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Contact info</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__socials socials">
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="32" height="32">
+            <use></use>
+            <span class="">Vkontakte</span>
+          </svg>
+        </a>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="32" height="32">
+            <use></use>
+            <span class="">OK</span>
+          </svg>
+        </a>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="32" height="32">
+            <use></use>
+            <span class="">Facebook</span>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/modules.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
