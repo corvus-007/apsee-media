@@ -1,0 +1,24 @@
+.feed-video {
+  @include clear-list();
+
+  margin-bottom: -20px;
+}
+
+.feed-video__item {
+  margin-bottom: 20px;
+}
+
+.feed-video__imagebox {
+  @include make-fit-object(270, 150);
+}
+
+.feed-video__image {
+
+}
+
+.feed-video__title {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  font-size: rem(15);
+  font-weight: 600;
+}

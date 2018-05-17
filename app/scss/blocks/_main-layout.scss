@@ -1,10 +1,11 @@
 .main-layout {
   @include make-container();
 
+  padding-top: $gutter;
+  padding-bottom: $gutter;
 
   @include mq-min(992px) {
     display: flex;
-    padding-top: $gutter;
   }
 }
 

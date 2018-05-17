@@ -1,0 +1,37 @@
+.footer-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-nav__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-nav__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-nav__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+}

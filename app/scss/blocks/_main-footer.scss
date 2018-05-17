@@ -1,0 +1,17 @@
+.main-footer {
+  background-color: #172532;
+}
+
+.main-footer__inner {
+  @include make-container();
+}
+
+.main-footer__nav {
+
+}
+
+.main-footer__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
