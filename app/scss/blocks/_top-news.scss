@@ -9,11 +9,16 @@
 }
 
 .top-news__carousel {
-  width: 65%;
-  margin-right: $gutter;;
-  flex-shrink: 0;
+  @include clear-list();
+
+  flex-grow: 1;
 }
 
 .top-news__items {
-  flex-grow: 1;
+  @include clear-list();
+
+  min-width: 370px;
+  margin-left: $gutter;
+  margin-bottom: -$gutter;
+  flex-shrink: 0;
 }

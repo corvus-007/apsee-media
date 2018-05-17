@@ -1,8 +1,33 @@
 .top-news-carousel {
+  .flickity-page-dots {
+    left: 20px;
+    bottom: 20px;
+    width: auto;
 
+    .dot {
+      background: #ffffff;
+    }
+  }
 }
 
 .top-news-carousel__item {
   width: 100%;
   height: 100%;
+
+  .top-news-item__imagebox {
+    height: 100%;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .top-news-item__body {
+    bottom: 50px;
+  }
+
+  .top-news-item__title {
+    padding-right: 100px;
+    font-size: rem(22);
+  }
 }
