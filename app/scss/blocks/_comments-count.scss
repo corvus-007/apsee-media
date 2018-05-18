@@ -1,0 +1,15 @@
+.comments-count {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: $accent-color;
+}
+
+.comments-count__icon {
+  display: block;
+  margin-right: 8px;
+  background-color: $accent-color;
+  fill: $accent-color;
+  border-radius: 50%;
+}

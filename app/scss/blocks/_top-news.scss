@@ -5,20 +5,32 @@
 .top-news__inner {
   @include make-container();
 
-  display: flex;
+  @include mq-min(992px) {
+    display: flex;
+  }
 }
 
 .top-news__carousel {
   @include clear-list();
 
-  flex-grow: 1;
+  margin-bottom: $gutter;
+
+  @include mq-min(992px) {
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
 }
 
 .top-news__items {
   @include clear-list();
 
-  min-width: 370px;
-  margin-left: $gutter;
+  width: 100%;
   margin-bottom: -$gutter;
-  flex-shrink: 0;
+
+  @include mq-min(992px) {
+    width: auto;
+    min-width: 370px;
+    margin-left: $gutter;
+    flex-shrink: 0;
+  }
 }

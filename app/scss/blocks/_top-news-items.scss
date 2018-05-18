@@ -1,8 +1,18 @@
 .top-news-items {
-
+  @include mq-range(568px, 991px) {
+    display: flex;
+  }
 }
 
 .top-news-items__item {
+  width: 100%;
   margin-bottom: $gutter;
-  min-height: 200px;
+
+  @include mq-range(568px, 991px) {
+    @include calc-column-width(2);
+  }
+
+  @include mq-min(992px) {
+    min-height: 200px;
+  }
 }
