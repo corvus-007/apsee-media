@@ -13,34 +13,7 @@
 .top-news-carousel__item {
   width: 100%;
 
-  .top-news-item__body {
-    bottom: 50px;
-  }
-
-  @include mq-min(568px) {
-    .top-news-item__title {
-      padding-right: 100px;
-      font-size: rem(22);
-    }
-  }
-
-  @include mq-range(568px, 991px) {
-    .top-news-item__imagebox {
-      &::before {
-        padding-top: 55%;
-      }
-    }
-  }
-
   @include mq-min(992px) {
     height: 100%;
-
-    .top-news-item__imagebox {
-      height: 100%;
-
-      &::before {
-        content: none;
-      }
-    }
   }
 }
