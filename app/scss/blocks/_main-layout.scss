@@ -10,12 +10,19 @@
 }
 
 .main-layout__main {
-  flex-grow: 1;
+  margin-bottom: $gutter;
+
+  @include mq-min(992px) {
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
 }
 
 .main-layout__sidebar {
-  width: 20%;
-  min-width: 270px;
-  margin-left: $gutter;
-  flex-shrink: 0;
+  @include mq-min(992px) {
+    width: 20%;
+    min-width: 270px;
+    margin-left: $gutter;
+    flex-shrink: 0;
+  }
 }

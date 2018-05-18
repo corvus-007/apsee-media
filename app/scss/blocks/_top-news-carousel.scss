@@ -24,7 +24,7 @@
     }
   }
 
-  @include mq-range(667px, 991px) {
+  @include mq-range(568px, 991px) {
     .top-news-item__imagebox {
       &::before {
         padding-top: 55%;
