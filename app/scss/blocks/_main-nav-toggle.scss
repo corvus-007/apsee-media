@@ -1,0 +1,51 @@
+.main-nav-toggle {
+  width: rem(28);
+  height: rem(20);
+  padding: 0;
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  color: $white-color;
+  font-size: 0;
+  background-color: currentColor;
+  border: none;
+  background-clip: content-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: $duration;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: rem(4);
+    background-color: currentColor;
+    transition: $duration;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: rem(16);
+  }
+
+  &--opened {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: rem(8);
+    }
+
+    &::before {
+      transform: rotate(-45deg) scale(1.1);
+    }
+
+    &::after {
+      transform: rotate(45deg) scale(1.1);
+    }
+  }
+}

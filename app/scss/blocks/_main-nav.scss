@@ -1,5 +1,13 @@
 .main-nav {
   background-color: #ffffff;
+
+  @include mq-max(992px) {
+    display: none;
+
+    &--opened {
+      display: block;
+    }
+  }
 }
 
 .main-nav__inner {
@@ -9,10 +17,12 @@
 .main-nav__list {
   @include clear-list();
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  @include mq-min(992px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
@@ -30,6 +40,7 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: $base-color;
   transition: $duration / 2;
 

@@ -1,4 +1,5 @@
 .main-header {
+  position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
   color: #ffffff;
@@ -15,10 +16,19 @@
 
 .main-header__logo {
   margin-right: $gutter;
+  max-width: 30%;
+
+  @include mq-max(767px) {
+  }
 }
 
 .main-header__toggle {
-  @include mq-min(768px) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mq-min(992px) {
     display: none;
   }
 }
@@ -29,7 +39,7 @@
   font-weight: 600;
   text-transform: uppercase;
 
-  @include mq-max(767px) {
+  @include mq-max(991px) {
     display: none;
   }
 }
