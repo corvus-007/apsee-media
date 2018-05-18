@@ -19,8 +19,32 @@
         <button class="main-header__toggle main-nav-toggle" type="button">Open menu</button>
         <p class="main-header__phrase">assotiation of the peoples of south-eastern europe</p>
         <div class="main-header__actions header-actions">
-          <button class="header-actions__item user" type="button">user</button>
-          <button class="header-actions__item search" type="button">search</button>
+          <ul class="header-actions__item user-list">
+            <li class="user-list__item">
+              <button class="user-list__button" type="button">
+                <svg class="user-list__icon" width="28" height="28">
+                  <use xlink:href=""></use>
+                </svg>
+                <span class="">Login</span>
+              </button>
+            </li>
+            <li class="user-list__item">
+              <button class="user-list__button" type="button">
+                <svg class="user-list__icon" width="28" height="28">
+                  <use xlink:href=""></use>
+                </svg>
+                <span class="">Logout</span>
+              </button>
+            </li>
+          </ul>
+          <div class="header-actions__item go-to-search">
+            <button class="header-actions__item go-to-search__button" type="button">
+              <svg class="go-to-search__icon" width="28" height="28">
+                <use xlink:href=""></use>
+              </svg>
+              <span class="">Search</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
