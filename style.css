@@ -1,42 +1,91 @@
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_light-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_light-webfont.woff") format("woff");
+  font-family: 'Open Sans';
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("fonts/opensans/opensanslight.woff2") format("woff2"), url("fonts/opensans/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_regular-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_regular-webfont.woff") format("woff");
+  font-family: 'Open Sans';
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url("fonts/opensans/opensanslightitalic.woff2") format("woff2"), url("fonts/opensans/opensanslightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans"), local("OpenSans"), url("fonts/opensans/opensans.woff2") format("woff2"), url("fonts/opensans/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_semibold-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_semibold-webfont.woff") format("woff");
+  font-family: 'Open Sans';
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("fonts/opensans/opensansitalic.woff2") format("woff2"), url("fonts/opensans/opensansitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("fonts/opensans/opensanssemibold.woff2") format("woff2"), url("fonts/opensans/opensanssemibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_bold-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_bold-webfont.woff") format("woff");
+  font-family: 'Open Sans';
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("fonts/opensans/opensanssemibolditalic.woff2") format("woff2"), url("fonts/opensans/opensanssemibolditalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("fonts/opensans/opensansbold.woff2") format("woff2"), url("fonts/opensans/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_extrabold-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_extrabold-webfont.woff") format("woff");
+  font-family: 'Open Sans';
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("fonts/opensans/opensansbolditalic.woff2") format("woff2"), url("fonts/opensans/opensansbolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("fonts/opensans/opensansextrabold.woff2") format("woff2"), url("fonts/opensans/opensansextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "proxima_nova";
-  src: url("fonts/proxima_nova/proxima_nova_black-webfont.woff2") format("woff2"), url("fonts/proxima_nova/proxima_nova_black-webfont.woff") format("woff");
-  font-weight: 900;
+  font-family: 'Open Sans';
+  src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url("fonts/opensans/opensansextrabolditalic.woff2") format("woff2"), url("fonts/opensans/opensansextrabolditalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: local("Libre Baskerville"), local("LibreBaskerville-Regular"), url("fonts/librebaskerville/librebaskerville.woff2") format("woff2"), url("fonts/librebaskerville/librebaskerville.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: local("Libre Baskerville Italic"), local("LibreBaskerville-Italic"), url("fonts/librebaskerville/librebaskervilleitalic.woff2") format("woff2"), url("fonts/librebaskerville/librebaskervilleitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: local("Libre Baskerville Bold"), local("LibreBaskerville-Bold"), url("fonts/librebaskerville/librebaskervillebold.woff2") format("woff2"), url("fonts/librebaskerville/librebaskervillebold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -46,7 +95,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 100%;
   font-weight: normal;
   line-height: 1.4;
@@ -69,7 +118,7 @@ body {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
@@ -1249,7 +1298,7 @@ body.compensate-for-scrollbar {
   text-align: center;
   font-weight: 800;
   font-size: 0.8125rem;
-  font-family: inherit;
+  font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
   text-decoration: none;
   text-transform: uppercase;
   line-height: normal;
@@ -1436,11 +1485,12 @@ span.wpcf7-not-valid-tip {
   text-decoration: none;
   line-height: normal;
   outline: none;
+  color: #287ab7;
+  background-color: transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1454,7 +1504,7 @@ span.wpcf7-not-valid-tip {
 }
 
 .get-more-button:active {
-  background-color: #f1f1f1;
+  background-color: #efefef;
 }
 
 .comments-count {
@@ -1471,10 +1521,10 @@ span.wpcf7-not-valid-tip {
 
 .comments-count__icon {
   display: block;
-  margin-right: 8px;
-  background-color: #287ab7;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
   fill: #287ab7;
-  border-radius: 50%;
 }
 
 .user-list {
@@ -1489,18 +1539,67 @@ span.wpcf7-not-valid-tip {
           align-items: center;
 }
 
+.user-list__item {
+  margin-right: 8px;
+}
+
+.user-list__item:last-child {
+  margin-right: 0;
+}
+
+.user-list__button {
+  padding: 10px;
+  font-size: 0;
+  background: none;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.user-list__button:hover, .user-list__button:focus {
+  color: #287ab7;
+}
+
 .user-list__icon {
   display: block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.go-to-search__button {
+  padding: 10px;
+  font-size: 0;
+  background: none;
+  color: #ffffff;
+  border: 1px solid;
   border-radius: 50%;
-  background: #287ab7;
-  fill: #287ab7;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.go-to-search__button:hover, .go-to-search__button:focus {
+  color: #287ab7;
 }
 
 .go-to-search__icon {
   display: block;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #287ab7;
-  fill: #287ab7;
+  fill: currentColor;
 }
 
 .main-header {
@@ -1532,7 +1631,7 @@ span.wpcf7-not-valid-tip {
 
 @media (min-width: 1280px) {
   .main-header__inner {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
@@ -1614,7 +1713,7 @@ span.wpcf7-not-valid-tip {
 
 @media (min-width: 1280px) {
   .main-nav__inner {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
@@ -1734,7 +1833,7 @@ span.wpcf7-not-valid-tip {
 
 @media (min-width: 1280px) {
   .main-layout {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
@@ -1863,7 +1962,7 @@ span.wpcf7-not-valid-tip {
 
 @media (min-width: 1280px) {
   .top-news__inner {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
@@ -2063,11 +2162,13 @@ span.wpcf7-not-valid-tip {
 .top-news-item__title {
   margin: 0;
   margin-top: 5px;
+  font-weight: 400;
   font-size: 1rem;
+  font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
 }
 
 .top-news-item__title span {
-  padding: 0.5px 8px;
+  padding: 1.5px 8px;
   background-color: #287ab7;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -2303,8 +2404,9 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   margin: 0;
   margin-top: 5px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
+  font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
 }
 
 .news-preview__title a {
@@ -2316,7 +2418,7 @@ span.wpcf7-not-valid-tip {
   .news-preview--special .news-preview__title {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -2415,7 +2517,8 @@ span.wpcf7-not-valid-tip {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #287ab7;
+  background: #287ab7 url("/images/play.svg") no-repeat calc(50% + 2px) 50%;
+  background-size: 20px 20px;
   -webkit-transition: 0.45s;
   transition: 0.45s;
 }
@@ -2438,6 +2541,98 @@ span.wpcf7-not-valid-tip {
   padding-right: 15px;
   font-size: 0.9375rem;
   font-weight: 600;
+}
+
+.feed-recommended {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: -20px;
+}
+
+.feed-recommended__item {
+  margin-bottom: 20px;
+}
+
+.feed-recommended__wraplink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #232020;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+
+.feed-recommended__wraplink:hover, .feed-recommended__wraplink:focus {
+  color: #287ab7;
+}
+
+.feed-recommended__imagebox {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 28%;
+  min-width: 80px;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: -webkit-filter 0.45s;
+  transition: -webkit-filter 0.45s;
+  transition: filter 0.45s;
+  transition: filter 0.45s, -webkit-filter 0.45s;
+}
+
+.feed-recommended__imagebox::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+.feed-recommended__imagebox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .feed-recommended__imagebox img {
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.feed-recommended__wraplink:hover .feed-recommended__imagebox,
+.feed-recommended__wraplink:focus .feed-recommended__imagebox {
+  -webkit-filter: saturate(150%) brightness(105%);
+          filter: saturate(150%) brightness(105%);
+}
+
+.feed-recommended__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
+}
+
+.feed-recommended__date {
+  font-size: 0.75rem;
+  color: #7a7a7a;
 }
 
 /**
@@ -2548,7 +2743,7 @@ span.wpcf7-not-valid-tip {
 
 @media (min-width: 1280px) {
   .main-footer__inner {
-    max-width: 1180px;
+    max-width: 1200px;
   }
 }
 
