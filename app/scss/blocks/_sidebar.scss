@@ -1,11 +1,18 @@
 .sidebar {
-
+  @include mq-max(991px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$gutter;
+  }
 }
 
 .sidebar__module {
   margin-bottom: $gutter;
 
-  &:last-child {
-    margin-bottom: 0;
+  @include mq-max(991px) {
+    flex-basis: calc(100% / 3 - #{$gutter});
+    margin-right: $gutter;
+    flex-grow: 1;
+    min-width: 260px;
   }
 }

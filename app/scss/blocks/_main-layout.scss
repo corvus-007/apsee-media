@@ -19,6 +19,8 @@
 }
 
 .main-layout__sidebar {
+  margin-bottom: -$gutter;
+
   @include mq-min(992px) {
     width: 20%;
     min-width: 270px;

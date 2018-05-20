@@ -1,6 +1,4 @@
 .footer-nav {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .footer-nav__list {
@@ -9,6 +7,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include mq-max(767px) {
+    justify-content: center;
+  }
 }
 
 .footer-nav__item {
@@ -21,13 +23,14 @@
 
 .footer-nav__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  transition: $duration;
 
   &:hover,
   &:focus {

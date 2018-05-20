@@ -3,12 +3,30 @@
 }
 
 .go-to-search__button {
-  // font-size: 0;
+  padding: 10px;
+  font-size: 0;
+  background: none;
+  color: #ffffff;
+  border: 1px solid rgba(#ffffff, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.8;
+  transition: $duration;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    opacity: 1;
+  }
 }
 
 .go-to-search__icon {
   display: block;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: $accent-color;
-  fill: $accent-color;
+  fill: currentColor;
+  transition: $duration;
 }

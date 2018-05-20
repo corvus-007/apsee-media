@@ -1,0 +1,54 @@
+.feed-recommended {
+  @include clear-list();
+
+  margin-bottom: -20px;
+}
+
+.feed-recommended__item {
+  margin-bottom: 20px;
+}
+
+.feed-recommended__wraplink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $base-color;
+  transition: $duration * 1.5;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.feed-recommended__imagebox {
+  @include make-fit-object();
+
+  width: 28%;
+  min-width: 80px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: filter $duration * 1.5;
+
+  .feed-recommended__wraplink:hover &,
+  .feed-recommended__wraplink:focus & {
+    filter: saturate(150%) brightness(105%);
+  }
+}
+
+.feed-recommended__image {
+
+}
+
+.feed-recommended__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: rem(14);
+  font-weight: 400;
+  font-family: $secondary-font;
+}
+
+.feed-recommended__date {
+  font-size: rem(12);
+  color: $muted-color;
+}
