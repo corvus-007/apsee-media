@@ -1469,9 +1469,9 @@ span.wpcf7-not-valid-tip {
 }
 
 .common-block-body .get-more {
-  border-top: 1px solid #dce4e9;
   margin: -20px;
   margin-top: 0;
+  border-top: 1px solid #dce4e9;
 }
 
 .get-more-button {
@@ -2435,11 +2435,25 @@ span.wpcf7-not-valid-tip {
   width: 100%;
 }
 
+.news-preview__text > :first-child {
+  margin-top: 0;
+}
+
+.news-preview__text > :last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 667px) {
   .news-preview--special .news-preview__text {
     display: block;
     margin-bottom: 10px;
   }
+}
+
+.news-preview__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 667px) {
@@ -2448,6 +2462,14 @@ span.wpcf7-not-valid-tip {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.news-preview__meta-item {
+  margin-right: 5px;
+}
+
+.news-preview__meta-item:last-child {
+  margin-right: 0;
 }
 
 .feed-video {
@@ -2812,6 +2834,8 @@ span.wpcf7-not-valid-tip {
 }
 
 .main-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #172532;
 }
 
@@ -2831,20 +2855,16 @@ span.wpcf7-not-valid-tip {
   }
 }
 
-.main-footer__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-footer__nav {
+  margin-bottom: 15px;
 }
 
-.footer-nav {
-  padding-top: 25px;
-  padding-bottom: 25px;
+@media (max-width: 767px) {
+  .main-footer__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-nav__list {
@@ -2861,6 +2881,14 @@ span.wpcf7-not-valid-tip {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .footer-nav__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-nav__item {
   margin-right: 15px;
 }
@@ -2871,13 +2899,15 @@ span.wpcf7-not-valid-tip {
 
 .footer-nav__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer-nav__link:hover, .footer-nav__link:focus {
@@ -2892,14 +2922,14 @@ span.wpcf7-not-valid-tip {
 }
 
 .socials__item {
-  display: inline-block;
+  margin-right: 10px;
+  font-size: 0;
   vertical-align: middle;
   text-decoration: none;
-  margin-right: 1.2em;
+  color: #287ab7;
   border: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #287ab7;
 }
 
 .socials__item:hover, .socials__item:focus {
