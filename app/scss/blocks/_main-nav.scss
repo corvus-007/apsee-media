@@ -1,13 +1,5 @@
 .main-nav {
   background-color: #ffffff;
-
-  @include mq-max(992px) {
-    display: none;
-
-    &--opened {
-      display: block;
-    }
-  }
 }
 
 .main-nav__inner {
