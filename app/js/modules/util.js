@@ -2,6 +2,7 @@
 
 window.util = (function () {
   return {
+    KEYCODE_ESC: 27,
     setMaxHeight: function (selector) {
       var maxHeight;
       var elements = document.querySelectorAll(selector);

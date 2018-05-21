@@ -1,0 +1,45 @@
+.header-search-form {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(#000000, 0.2);
+  z-index: 2;
+}
+
+.header-search-form__input {
+  font-size: rem(22);
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.header-search-form__submit {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: rem(16);
+  font-family: inherit;
+  text-decoration: none;
+  line-height: normal;
+  outline: none;
+  color: $accent-color;
+  background-color: transparent;
+  user-select: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: $duration;
+
+  &:hover,
+  &:focus {
+    background-color: #f5f5f5;
+  }
+
+  &:active {
+    background-color: #efefef;
+  }
+}
+
+.header-search-form__group {
+  @include make-container();
+}
