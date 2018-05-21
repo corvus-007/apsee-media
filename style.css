@@ -1446,6 +1446,21 @@ span.wpcf7-not-valid-tip {
   color: #07652c;
 }
 
+.input {
+  padding: 0.75rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  background: #edeef1;
+  font: inherit;
+  font-size: 1rem;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .popup {
   width: calc(100% - 15px);
   max-width: 500px;
@@ -1600,6 +1615,11 @@ span.wpcf7-not-valid-tip {
   opacity: 1;
 }
 
+.go-to-search__button--opened {
+  border-color: #ffffff;
+  opacity: 1;
+}
+
 .go-to-search__icon {
   display: block;
   width: 16px;
@@ -1608,6 +1628,75 @@ span.wpcf7-not-valid-tip {
   fill: currentColor;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header-search-form {
+  position: relative;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.header-search-form__input {
+  font-size: 1.375rem;
+  text-align: center;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.header-search-form__submit {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: none;
+  line-height: normal;
+  outline: none;
+  color: #287ab7;
+  background-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-search-form__submit:hover, .header-search-form__submit:focus {
+  background-color: #f5f5f5;
+}
+
+.header-search-form__submit:active {
+  background-color: #efefef;
+}
+
+.header-search-form__group {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+  .header-search-form__group {
+    max-width: 1200px;
+  }
+}
+
+.header-search-form-input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-header {
@@ -1698,15 +1787,6 @@ span.wpcf7-not-valid-tip {
 
 .main-nav {
   background-color: #ffffff;
-}
-
-@media (max-width: 992px) {
-  .main-nav {
-    display: none;
-  }
-  .main-nav--opened {
-    display: block;
-  }
 }
 
 .main-nav__inner {
