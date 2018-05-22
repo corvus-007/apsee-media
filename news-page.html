@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>News page – APSEE MEDIA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="main-header__inner">
+      <div class="main-header__logo logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__image" src="images/logo.png" alt="logo of assotiation of the peoples of south-eastern europe">
+        </a>
+      </div>
+      <button class="main-header__toggle main-nav-toggle" type="button">Open menu</button>
+      <p class="main-header__phrase">assotiation of the peoples of south-eastern europe</p>
+      <div class="main-header__actions header-actions">
+        <ul class="header-actions__item user-list">
+          <li class="user-list__item">
+            <button class="user-list__button" type="button">
+              <svg class="user-list__icon" width="28" height="28">
+                <use xlink:href="images/symbols.svg#user"></use>
+              </svg>
+              <span class="visuallyhidden">Login</span>
+            </button>
+          </li>
+          <li class="user-list__item">
+            <button class="user-list__button" type="button">
+              <svg class="user-list__icon" width="28" height="28">
+                <use xlink:href="images/symbols.svg#logout"></use>
+              </svg>
+              <span class="visuallyhidden">Logout</span>
+            </button>
+          </li>
+        </ul>
+        <div class="header-actions__item go-to-search">
+          <button class="header-actions__item go-to-search__button" type="button" title="Search">
+            <svg class="go-to-search__icon" width="28" height="28">
+              <use xlink:href="images/symbols.svg#search"></use>
+            </svg>
+            <svg class="go-to-search__icon go-to-search__icon--hidden" width="28" height="28">
+              <use xlink:href="images/symbols.svg#cancel"></use>
+            </svg>
+            <span class="visuallyhidden">Go to search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <form class="header-search-form" action="/" method="get">
+    <div class="header-search-form__group header-search-form-input-group">
+      <input class="header-search-form__input header-search-form-input-group__input input" type="text" name="s">
+      <button class="header-search-form__submit header-search-form-input-group__append" type="submit">
+        <svg class="header-search-form__icon" width="28" height="28">
+          <use xlink:href="images/symbols.svg#search"></use>
+        </svg>
+        <span class="visuallyhidden">Search</span>
+      </button>
+    </div>
+  </form>
+
+  <nav class="main-nav">
+    <div class="main-nav__inner">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="rubric-page.html">Politics and geopolitics</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Business</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Science and Society</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Opinion</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Forum</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">About us</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">Contact info</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="main-layout">
+    <div class="main-layout__row">
+      <ul class="main-layout__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Politics and geopolitics</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-layout__row">
+      <main class="main-layout__main main-content">
+        <article class="main-content__section post common-block" itemscope itemtype="http://schema.org/NewsArticle">
+          <header class="post__header">
+            <h1 class="post__title" itemprop="headline">Who is Stefan A. Halper, the FBI source who assisted the Russia investigation?</h1>
+            <ul class="post__info post-info">
+              <li class="post-info__item">
+                <span class="post__rubric">Social</span>
+              </li>
+              <li class="post-info__item">
+                <time class="post__date common-date" datetime="2018-03-15">15 march 2018</time>
+              </li>
+              <li class="post-info__item">
+                <ul class="post__counters">
+                  <li class="post__counters-item">
+                    <a class="post__comments-count comments-count" href="">
+                      <svg class="comments-count__icon" width="28" height="28">
+                        <use xlink:href="images/symbols.svg#comment"></use>
+                      </svg>
+                      22
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </header>
+          <div class="post-imagebox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="https://images.unsplash.com/photo-1427434991195-f42379e2139d?auto=format&fit=crop&w=1489&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Осиротевшая косуля нашла в заповеднике «Брянский лес» приемную маму" itemprop="contentUrl">
+            <div class="post-imagebox__info">
+              <span>Фото:
+                <a href="">public-photo.ru/nature</a>
+              </span>
+            </div>
+          </div>
+          <div class="post-content" itemprop="articleBody">
+            <p>Stefan A. Halper, the FBI source who assisted the Russia investigation and is at the center of a standoff between congressional Republicans and the Justice Department, is a well-connected veteran of past GOP administrations who convened senior intelligence officials for seminars at the University of Cambridge in England.</p>
+
+            <p>In the summer and fall of 2016, Halper, then an emeritus professor at Cambridge, contacted three Trump campaign advisers for brief talks and meetings that largely centered on foreign policy, The Washington Post reported last week.</p>
+
+            <p>At some point that year, he began working as a secret informant for the FBI as it investigated Russia’s interference in the campaign, according to multiple people familiar with his activities.</p>
+
+            <blockquote>
+              <p>Halper’s connections to the intelligence world have been present throughout his career and at Cambridge, where he ran an intelligence seminar that brought together intelligence officials of past and present.</p>
+            </blockquote>
+
+            <p><img src="https://images.unsplash.com/photo-1475710534222-6165a8b45449?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt=""></p>
+
+            <p>The Post had previously confirmed Halper’s identity, but did not report his name following warnings from U.S. intelligence officials that exposing him could endanger him or his contacts. Now that he has been identified as the FBI’s informant by multiple news organizations, including the Wall Street Journal, New York magazine and Axios, The Post has decided to publish his name.</p>
+
+            <p>Halper, 73, declined to comment. The FBI declined to comment.</p>
+
+            <h2>Tomorrow is a new day</h2>
+
+            <p>Halper’s contacts with Trump advisers around the start of the FBI’s counterintelligence have come under scrutiny in recent weeks by House allies of President Donald Trump. Late last month, House Intelligence Committee Chairman Devin Nunes, R-Calif., issued a subpoena to the Justice Department requesting all documents related to the FBI informant.</p>
+
+            <p>In recent days, Trump has seized on the reports about Halper’s role in the Russia probe, suggesting in tweets that the FBI improperly spied on his campaign. There is no evidence to suggest Halper was inserted into the Trump campaign, but he did engage in a pattern of seeking out and meeting three Trump advisers.</p>
+
+            <p>On Monday, the conflict was defused – at least temporarily – with the announcement that White House Chief of Staff John Kelly plans to convene a meeting between top law enforcement officials and GOP congressional leaders to “review highly classified and other information” the lawmakers have requested about the source.</p>
+
+            <p>Halper’s connections to the intelligence world have been present throughout his career and at Cambridge, where he ran an intelligence seminar that brought together intelligence officials of past and present.</p>
+
+            <h3>Tomorrow is a new day</h3>
+
+            <p>In 2014, Halper, along with Richard Dearlove, the former head of Britain’s foreign intelligence service, sponsored a meeting of the seminar that drew then-Director of the Defense Intelligence Agency Michael Flynn, who would go on to serve as Trump’s first national security adviser.</p>
+
+            <p>Halper taught international affairs and American studies at Cambridge from 2001 until 2015, when he stepped down with the honorary title of emeritus senior fellow of the Centre of International Studies, according to a spokesman for the university.</p>
+
+            <p>“He thinks well. He writes critically. And he knows a lot of people whose insights he can tap for us as well,” one U.S. government official said.</p>
+
+            <p>Halper’s first wife was the daughter of the prominent former CIA analyst Ray S. Cline, who worked alongside President John F. Kennedy during the Cuban missile crisis in 1962 and mentored Halper, introducing him to associates in the intelligence and political communities, according to numerous people familiar with their relationship.</p>
+
+            <p>After earning his doctorate from the University of Oxford in 1971, Halper quickly ascended, serving on the White House domestic policy council for President Richard M. Nixon and then in the Office of Management and Budget before being tapped as an assistant to President Gerald Ford’s chief of staff. According to a document from Ford’s presidential library, part of Halper’s job was assessing domestic political candidates, such as Jimmy Carter, for high-ranking staffers in the West Wing.</p>
+
+            <p>Halper later worked for Sen. William Roth, R-Del., before joining the George H.W. Bush campaign in 1980 as national policy development director and then working for the Reagan-Bush campaign as national director of policy coordination. In the Reagan administration, he served as deputy assistant secretary of state for politico-military affairs, according to his biography.</p>
+          </div>
+        </article>
+
+        <section class="main-content common-block">
+          <div class="common-block-header">
+            <h2 class="common-block-title">Comments</h2>
+          </div>
+          <div class="common-block-body">
+
+          </div>
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="main-layout__sidebar sidebar">
+        <div class="sidebar__module common-block">
+          <div class="common-block-header">
+            <h2 class="common-block-title">Video</h2>
+          </div>
+          <div class="common-block-body common-block-body--pad-x-none">
+            <ul class="feed-video">
+              <li class="feed-video__item">
+                <a class="feed-video__wraplink" href="">
+                  <div class="feed-video__imagebox">
+                    <img class="feed-video__image" src="https://images.unsplash.com/photo-1491822486797-ccc854cc2345?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6812187e8634d4fe1e2e7ebba3ff0f6e&auto=format&fit=crop&w=1050&q=80" alt="">
+                  </div>
+                  <h3 class="feed-video__title">Malaysia’s Anwar Ibrahim Freed From Detention, Pardoned</h3>
+                </a>
+              </li>
+              <li class="feed-video__item">
+                <a class="feed-video__wraplink" href="">
+                  <div class="feed-video__imagebox">
+                    <img class="feed-video__image" src="https://images.unsplash.com/photo-1520351497804-e95d64a88431?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c494fc4e262c01ffe49de982db00cc0&auto=format&fit=crop&w=1142&q=80" alt="">
+                  </div>
+                  <h3 class="feed-video__title">What the U.S.-China Trade War Means for Workers on the Ground</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar__module common-block">
+          <div class="common-block-header">
+            <h2 class="common-block-title">Recommended</h2>
+          </div>
+          <div class="common-block-body">
+            <ul class="feed-recommended">
+              <li class="feed-recommended__item">
+                <a class="feed-recommended__wraplink" href="">
+                  <div class="feed-recommended__imagebox">
+                    <img class="feed-recommended__image" src="https://images.unsplash.com/photo-1502759166908-21d2a2ddc2d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7f1f0f2c236f0caea5b3b156b432858&auto=format&fit=crop&w=1050&q=80" alt="Hundreds of Hawaiians wait as Kilauea volcano continues to erupt">
+                  </div>
+                  <div class="feed-recommended__body">
+                    <h3 class="feed-recommended__title">Hundreds of Hawaiians wait as Kilauea volcano continues to erupt</h3>
+                    <time class="feed-recommended__date common-date" datetime="2018-06-08">8 june 2018</time>
+                  </div>
+                </a>
+              </li>
+              <li class="feed-recommended__item">
+                <a class="feed-recommended__wraplink" href="">
+                  <div class="feed-recommended__imagebox">
+                    <img class="feed-recommended__image" src="https://images.unsplash.com/photo-1517185203793-238f87b943f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5233b14dd72090bd4c74e7ef434f8d1f&auto=format&fit=crop&w=1050&q=80" alt="Las Vegas’ mortgage-delinquency rate lower than US average">
+                  </div>
+                  <div class="feed-recommended__body">
+                    <h3 class="feed-recommended__title">Las Vegas’ mortgage-delinquency rate lower than US average</h3>
+                    <time class="feed-recommended__date common-date" datetime="2018-06-08">8 june 2018</time>
+                  </div>
+                </a>
+              </li>
+              <li class="feed-recommended__item">
+                <a class="feed-recommended__wraplink" href="">
+                  <div class="feed-recommended__imagebox">
+                    <img class="feed-recommended__image" src="https://images.unsplash.com/photo-1515017453882-9f32c5d4af2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621cc52921026470637c231ebcb5775e&auto=format&fit=crop&w=1051&q=80" alt="Las Vegas sees growing business in same-sex weddings">
+                  </div>
+                  <div class="feed-recommended__body">
+                    <h3 class="feed-recommended__title">Las Vegas sees growing business in same-sex weddings</h3>
+                    <time class="feed-recommended__date common-date" datetime="2018-06-08">8 june 2018</time>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar__module common-block">
+          <div class="common-block-header">
+            <h2 class="common-block-title">Forum</h2>
+          </div>
+          <div class="common-block-body">
+            <ul class="feed-comments-forum">
+              <li class="feed-comments-forum__item">
+                <a class="feed-comments-forum__wraplink" href="">
+                  <div class="feed-comments-forum__author-photo">
+                    <img class="feed-comments-forum__author-image" src="https://images.unsplash.com/photo-1517611682873-f735f9c0de28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a5bbc7f0b8e93a38866a052d5875cb&auto=format&fit=crop&w=2047&q=80" alt="Warrentrouble">
+                  </div>
+                  <div class="feed-comments-forum__author-info">
+                    <time class="feed-comments-forum__date common-date" datetime="2018-03-15">15 march 2018</time>
+                    <span class="feed-comments-forum__author-name">Warrentrouble</span>
+                  </div>
+                  <div class="feed-comments-forum__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et iusto fuga nam, minus porro.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="feed-comments-forum__item">
+                <a class="feed-comments-forum__wraplink" href="">
+                  <div class="feed-comments-forum__author-photo">
+                    <img class="feed-comments-forum__author-image" src="https://images.unsplash.com/photo-1485960994840-902a67e187c8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0577c246d091415fa44a2a047f910f52&auto=format&fit=crop&w=1055&q=80" alt="Anderfoot">
+                  </div>
+                  <div class="feed-comments-forum__author-info">
+                    <time class="feed-comments-forum__date common-date" datetime="2018-03-15">15 march 2018</time>
+                    <span class="feed-comments-forum__author-name">Anderfoot</span>
+                  </div>
+                  <div class="feed-comments-forum__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et iusto fuga nam, minus porro.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="feed-comments-forum__item">
+                <a class="feed-comments-forum__wraplink" href="">
+                  <div class="feed-comments-forum__author-photo">
+                    <img class="feed-comments-forum__author-image" src="https://images.unsplash.com/photo-1500649297466-74794c70acfc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce5cca94a31b3b2c59c9ff1002079ed9&auto=format&fit=crop&w=1050&q=80" alt="Silveranderson">
+                  </div>
+                  <div class="feed-comments-forum__author-info">
+                    <time class="feed-comments-forum__date common-date" datetime="2018-03-15">15 march 2018</time>
+                    <span class="feed-comments-forum__author-name">Silveranderson</span>
+                  </div>
+                  <div class="feed-comments-forum__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et iusto fuga nam, minus porro.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <div class="main-footer__nav footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Home</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Politics and geopolitics</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Business</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Science and Society</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Opinion</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Forum</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">About us</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Contact info</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__socials socials">
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-instagram"></use>
+            <span class="visuallyhidden">Instagram</span>
+          </svg>
+        </a>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-twitter"></use>
+            <span class="visuallyhidden">Twitter</span>
+          </svg>
+        </a>
+        <a class="socials__item" href="" title="">
+          <svg class="socials__icon" width="42" height="42">
+            <use xlink:href="images/symbols.svg#soc-facebook"></use>
+            <span class="visuallyhidden">Facebook</span>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/modules.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
