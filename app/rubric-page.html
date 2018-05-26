@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Home – APSEE MEDIA</title>
+  <title>Rubric page – APSEE MEDIA</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,88 +15,28 @@
   @@include('blocks/main-header.html')
   @@include('blocks/main-nav.html')
 
-  <section class="top-news">
-    <div class="top-news__inner">
-      <h2 class="visuallyhidden">Top news</h2>
-      <div class="top-news__carousel top-news-carousel">
-        <div class="top-news-carousel__item top-news-item top-news-item--in-carousel">
-          <a class="top-news-item__wraplink" href="">
-            <div class="top-news-item__imagebox">
-              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1502352483654-33ffd4275714?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f17833a657c223e20b7b0a3e7513334a&auto=format&fit=crop&w=1050&q=80" alt="‘The gorilla in the room’: Inside Trump’s failed efforts to meet Putin in 2013">
-            </div>
-            <span class="top-news-item__rubric">Science and society</span>
-            <div class="top-news-item__body">
-              <time class="top-news-item__date common-date" datetime="2018-06-11">11, june 2018</time>
-              <h2 class="top-news-item__title"><span>‘The gorilla in the room’: Inside Trump’s failed efforts to meet Putin in 2013</span></h2>
-            </div>
-          </a>
-        </div>
-        <div class="top-news-carousel__item top-news-item top-news-item--in-carousel">
-          <a class="top-news-item__wraplink" href="">
-            <div class="top-news-item__imagebox">
-              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=15be9f9073988c075caa018991009b74&auto=format&fit=crop&w=1050&q=80" alt="Why are House Republicans bucking their leadership on immigration?">
-            </div>
-            <span class="top-news-item__rubric">Business</span>
-            <div class="top-news-item__body">
-              <time class="top-news-item__date common-date" datetime="2018-06-10">10, june 2018</time>
-              <h2 class="top-news-item__title"><span>Why are House Republicans bucking their leadership on immigration?s</span></h2>
-            </div>
-          </a>
-        </div>
-        <div class="top-news-carousel__item top-news-item top-news-item--in-carousel">
-          <a class="top-news-item__wraplink" href="">
-            <div class="top-news-item__imagebox">
-              <img class="top-news-item__image" src="https://images.unsplash.com/reserve/OnRKhvlFQ2uJNSx5O3cc_DSC00560.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2a45195751c565c1d11ba20aa843ba48&auto=format&fit=crop&w=1053&q=80" alt="Trump’s long history of referring to nonwhite criminals as ‘animals’">
-            </div>
-            <span class="top-news-item__rubric">Politics and geopolitics</span>
-            <div class="top-news-item__body">
-              <time class="top-news-item__date common-date" datetime="2018-06-09">9, june 2018</time>
-              <h2 class="top-news-item__title"><span>Trump’s long history of referring to nonwhite criminals as ‘animals’</span></h2>
-            </div>
-          </a>
-        </div>
-      </div>
-      <ul class="top-news__items top-news-items">
-        <li class="top-news-items__item top-news-item">
-          <a class="top-news-item__wraplink" href="">
-            <div class="top-news-item__imagebox">
-              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1523357585206-175e971f2ad9?ixlib=rb-0.3.5&s=c69807415f2ffe608318195ce16c2a54&auto=format&fit=crop&w=1053&q=80" alt="McConnell warns control of the Senate is ‘absolutely’ in play in midterm elections">
-            </div>
-            <span class="top-news-item__rubric">Opinion</span>
-            <div class="top-news-item__body">
-              <time class="top-news-item__date common-date" datetime="2018-06-08">8, june 2018</time>
-              <h2 class="top-news-item__title"><span>McConnell warns control of the Senate is ‘absolutely’ in play in midterm elections</span></h2>
-            </div>
-          </a>
+  <div class="main-layout">
+    <div class="main-layout__row">
+      <ul class="main-layout__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
         </li>
-        <li class="top-news-items__item top-news-item">
-          <a class="top-news-item__wraplink" href="">
-            <div class="top-news-item__imagebox">
-              <img class="top-news-item__image" src="https://images.unsplash.com/photo-1522431266699-83e4a2a82b16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b843e6eeabf0c8989d4c64b1d51251da&auto=format&fit=crop&w=1050&q=80" alt="Why hasn’t Trump attacked Michael Avenatti?">
-            </div>
-            <span class="top-news-item__rubric">Science and society</span>
-            <div class="top-news-item__body">
-              <time class="top-news-item__date common-date" datetime="2018-06-08">8, june 2018</time>
-              <h2 class="top-news-item__title"><span>Why hasn’t Trump attacked Michael Avenatti?</span></h2>
-            </div>
-          </a>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Politics and geopolitics</a>
         </li>
       </ul>
     </div>
-  </section>
-
-  <div class="main-layout">
     <div class="main-layout__row">
       <main class="main-layout__main main-content">
-        <section class="main-content__section politics-news common-block">
+        <div class="main-content__section common-block">
           <div class="common-block-header">
-            <h2 class="common-block-title">Politics and geopolitics</h2>
+            <h1 class="common-block-title">Politics and geopolitics</h1>
           </div>
           <div class="common-block-body">
             <ul class="news-preview-items">
               <li class="news-preview-items__item news-preview-items__item--special news-preview news-preview--special">
                 <div class="news-preview__imagebox">
-                  <a href=""><img class="news-preview__image" src="https://images.unsplash.com/photo-1506108198627-b100e11bbc47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec77747e2fa7b03bb394aa4e78c4434b&auto=format&fit=crop&w=1050&q=80" alt="President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form"></a>
+                  <a href="news-page.html"><img class="news-preview__image" src="https://images.unsplash.com/photo-1506108198627-b100e11bbc47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec77747e2fa7b03bb394aa4e78c4434b&auto=format&fit=crop&w=1050&q=80" alt="President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form"></a>
                 </div>
                 <div class="news-preview__body">
                   <time class="news-preview__date common-date" datetime="2018-03-15">15 march 2018</time>
@@ -108,7 +48,7 @@
                       22
                     </a>
                   </div>
-                  <h3 class="news-preview__title"><a href="">President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form</a></h3>
+                  <h3 class="news-preview__title"><a href="news-page.html">President Trump lists Michael Cohen's hush payment to Stormy Daniels in his financial disclosure form</a></h3>
                   <div class="news-preview__text">
                     <p>"It's not a loan, but he reported it any way," Rudy Giuliani insisted to the Daily News.</p>
                   </div>
@@ -174,39 +114,6 @@
                   </div>
                 </div>
               </li>
-            </ul>
-            <div class="get-more">
-              <button class="get-more__button get-more-button" type="button">More</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-content__section politics-news common-block">
-          <div class="common-block-header">
-            <h2 class="common-block-title">Business</h2>
-          </div>
-          <div class="common-block-body">
-            <ul class="news-preview-items">
-              <li class="news-preview-items__item news-preview-items__item--special news-preview news-preview--special">
-                <div class="news-preview__imagebox">
-                  <a href=""><img class="news-preview__image" src="https://images.unsplash.com/photo-1505567745926-ba89000d255a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9712530090ee856b63852ed89fabb2c7&auto=format&fit=crop&w=1351&q=80" alt="‘Escort queen’ at center of Louisville basketball scandal arrested"></a>
-                </div>
-                <div class="news-preview__body">
-                  <time class="news-preview__date common-date" datetime="2018-03-15">15 march 2018</time>
-                  <div class="news-preview__meta">
-                    <a class="news-preview__meta-item comments-count" href="">
-                      <svg class="comments-count__icon" width="28" height="28">
-                        <use xlink:href="images/symbols.svg#comment"></use>
-                      </svg>
-                      22
-                    </a>
-                  </div>
-                  <h3 class="news-preview__title"><a href="">‘Escort queen’ at center of Louisville basketball scandal arrested</a></h3>
-                  <div class="news-preview__text">
-                    <p>News outlets report Katina Powell was arrested Thursday, moments after the court told her to vacate her Louisville home, for allegedly cashing stolen and forged checks</p>
-                  </div>
-                </div>
-              </li>
               <li class="news-preview-items__item news-preview">
                 <div class="news-preview__imagebox">
                   <a href=""><img class="news-preview__image" src="https://images.unsplash.com/photo-1494806465803-34e97e0ec1c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=372db1e34dfe54d8477df24fb85bc009&auto=format&fit=crop&w=1347&q=80" alt="Teacher, one student killed in NJ school bus-truck collision"></a>
@@ -267,20 +174,7 @@
                   </div>
                 </div>
               </li>
-            </ul>
-            <div class="get-more">
-              <button class="get-more__button get-more-button" type="button">More</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-content__section politics-news common-block">
-          <div class="common-block-header">
-            <h2 class="common-block-title">Science and society</h2>
-          </div>
-          <div class="common-block-body">
-            <ul class="news-preview-items">
-              <li class="news-preview-items__item news-preview-items__item--special news-preview news-preview--special">
+              <li class="news-preview-items__item news-preview">
                 <div class="news-preview__imagebox">
                   <a href=""><img class="news-preview__image" src="https://images.unsplash.com/photo-1503385824845-4f3407ce5e03?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9217a85a5ea86011aa582344960c31d6&auto=format&fit=crop&w=1350&q=80" alt="Miguel Garduno’s play proves sweet for Lights FC"></a>
                 </div>
@@ -365,7 +259,7 @@
               <button class="get-more__button get-more-button" type="button">More</button>
             </div>
           </div>
-        </section>
+        </div>
       </main>
 
       <!-- Sidebar -->

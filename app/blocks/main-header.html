@@ -1,8 +1,8 @@
 <header class="main-header">
   <div class="main-header__inner">
     <div class="main-header__logo logo">
-      <a class="logo__link" href="#">
-        <img class="logo__image" src="http://placehold.it/290x80/F38181/fff" alt="logo of assotiation of the peoples of south-eastern europe">
+      <a class="logo__link" href="index.html">
+        <img class="logo__image" src="images/logo.png" alt="logo of assotiation of the peoples of south-eastern europe">
       </a>
     </div>
     <button class="main-header__toggle main-nav-toggle" type="button">Open menu</button>
@@ -14,7 +14,7 @@
             <svg class="user-list__icon" width="28" height="28">
               <use xlink:href="images/symbols.svg#user"></use>
             </svg>
-            <span class="">Login</span>
+            <span class="visuallyhidden">Login</span>
           </button>
         </li>
         <li class="user-list__item">
@@ -22,7 +22,7 @@
             <svg class="user-list__icon" width="28" height="28">
               <use xlink:href="images/symbols.svg#logout"></use>
             </svg>
-            <span class="">Logout</span>
+            <span class="visuallyhidden">Logout</span>
           </button>
         </li>
       </ul>
@@ -31,7 +31,10 @@
           <svg class="go-to-search__icon" width="28" height="28">
             <use xlink:href="images/symbols.svg#search"></use>
           </svg>
-          <span class="">Go to search</span>
+          <svg class="go-to-search__icon go-to-search__icon--hidden" width="28" height="28">
+            <use xlink:href="images/symbols.svg#cancel"></use>
+          </svg>
+          <span class="visuallyhidden">Go to search</span>
         </button>
       </div>
     </div>
@@ -42,7 +45,10 @@
   <div class="header-search-form__group header-search-form-input-group">
     <input class="header-search-form__input header-search-form-input-group__input input" type="text" name="s">
     <button class="header-search-form__submit header-search-form-input-group__append" type="submit">
-      Search
+      <svg class="header-search-form__icon" width="28" height="28">
+        <use xlink:href="images/symbols.svg#search"></use>
+      </svg>
+      <span class="visuallyhidden">Search</span>
     </button>
   </div>
 </form>
