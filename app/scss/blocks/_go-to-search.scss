@@ -34,4 +34,8 @@
   border-radius: 50%;
   fill: currentColor;
   transition: $duration;
+
+  &--hidden {
+    display: none;
+  }
 }

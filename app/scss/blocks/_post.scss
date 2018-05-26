@@ -1,0 +1,28 @@
+.post {
+  padding: 20px;
+}
+
+.post__header {
+  margin-bottom: 20px;
+}
+
+.post__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: rem(22);
+  line-height: 1.45;
+  font-family: $secondary-font;
+
+  @include mq-min(667px) {
+    font-size: rem(28);
+  }
+
+  @include mq-min(768px) {
+    font-size: rem(34);
+  }
+}
+
+.post__counters {
+  @include clear-list();
+}

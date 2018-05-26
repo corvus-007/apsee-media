@@ -1,7 +1,7 @@
 .main-header {
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #ffffff;
   background-color: #1e476f;
 }
@@ -36,11 +36,15 @@
 .main-header__phrase {
   margin: 0;
   margin-left: auto;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
 
   @include mq-max(991px) {
     display: none;
+  }
+  @include mq-min(1080px) {
+    font-weight: 600;
+    font-size: rem(18);
   }
 }
 

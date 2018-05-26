@@ -5,6 +5,12 @@
   z-index: 2;
 }
 
+.header-search-form__group {
+  @include make-container();
+
+  position: relative;
+}
+
 .header-search-form__input {
   font-size: rem(22);
   text-align: center;
@@ -13,6 +19,10 @@
 }
 
 .header-search-form__submit {
+  position: absolute;
+  top: 0;
+  right: $gutter / 2;
+  bottom: 0;
   display: block;
   padding: 12px;
   text-align: center;
@@ -29,10 +39,13 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: $duration;
+  opacity: 0.8;
+  color: $accent-color;
 
   &:hover,
   &:focus {
     background-color: #f5f5f5;
+    opacity: 1;
   }
 
   &:active {
@@ -40,6 +53,7 @@
   }
 }
 
-.header-search-form__group {
-  @include make-container();
+.header-search-form__icon {
+  display: block;
+  fill: currentColor;
 }

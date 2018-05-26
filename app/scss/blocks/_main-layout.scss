@@ -3,10 +3,23 @@
 
   padding-top: $gutter;
   padding-bottom: $gutter;
+}
+
+.main-layout__row {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include mq-min(992px) {
     display: flex;
   }
+}
+
+.main-layout__breadcrumbs {
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .main-layout__main {

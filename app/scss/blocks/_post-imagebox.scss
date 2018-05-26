@@ -1,0 +1,6 @@
+.post-imagebox {
+  @include make-fit-object(800, 500);
+
+  margin-bottom: rem(30);
+  background-color: #393E46;
+}
