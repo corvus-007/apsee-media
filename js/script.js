@@ -8,4 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     contain: true,
     cellSelector: '.top-news-carousel__item'
   });
+
+  $('.enter-tabs').tabslet();
 });

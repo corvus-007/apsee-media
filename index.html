@@ -24,7 +24,7 @@
       <div class="main-header__actions header-actions">
         <ul class="header-actions__item user-list">
           <li class="user-list__item">
-            <button class="user-list__button" type="button">
+            <button class="user-list__button" type="button" data-fancybox data-src="#enter-popup">
               <svg class="user-list__icon" width="28" height="28">
                 <use xlink:href="images/symbols.svg#user"></use>
               </svg>
@@ -631,6 +631,82 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup" id="enter-popup" hidden>
+    <div class='enter-tabs'>
+      <ul class="enter-tabs__menu">
+        <li class="enter-tabs__menu-item">
+          <a class="enter-tabs__menu-link" href="#signup">Sign Up</a>
+        </li>
+        <li class="enter-tabs__menu-item">
+          <a class="enter-tabs__menu-link" href="#login">Log In</a>
+        </li>
+      </ul>
+      <div class="enter-tabs__pane" id="signup">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Sign Up</h2>
+        </div>
+        <form class="signup-form" action="/" method="post">
+          <div class="field">
+            <label class="field__label" for="field-signup-name">Name</label>
+            <div class="field__control">
+              <input class="field__input input" id="field-signup-name" type="text" name="name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="field-signup-email">Email</label>
+            <div class="field__control">
+              <input class="field__input input" id="field-signup-email" type="email" name="email" autocomplete="off" required>
+            </div>
+            <p class="field__text">Your email address will show on your profile page, but we will never share or sell it.</p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="field-signup-password">Password</label>
+            <div class="field__control">
+              <input class="field__input input" id="field-signup-password" type="password" name="password" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="field-signup-confirm-password">Confirm Password</label>
+            <div class="field__control">
+              <input class="field__input input" id="field-signup-confirm-password" type="password" name="confirmPassword" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="field__control">
+              <label class="field-checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="acceptTerms" required>
+                <span class="checkbox__indicator">I agree to the <a href="#" target="_blank">terms and conditions</a></span>
+              </label>
+            </div>
+          </div>
+          <button class="submit-button button" type="submit">Create an Account</button>
+        </form>
+      </div>
+      <div class="enter-tabs__pane" id="login">
+        <div class="common-block-header">
+          <h2 class="common-block-title">Log In</h2>
+        </div>
+        <form class="login-form" action="/" method="post">
+          <div class="field">
+            <label class="field__label" for="field-login-email">Email</label>
+            <div class="field__control">
+              <input class="field__input input" id="field-login-email" type="email" name="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="field-login-password">Password</label>
+            <a class="login-form__forgot-password" href="" tabindex="-1">Forgot password?</a>
+            <div class="field__control">
+              <input class="field__input input" id="field-login-password" name="loginPassword" type="password" required>
+            </div>
+          </div>
+          <button class="submit-button button" type="submit">Login</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/plugins.js"></script>
