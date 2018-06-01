@@ -9,7 +9,18 @@ document.addEventListener('DOMContentLoaded', function () {
     cellSelector: '.top-news-carousel__item'
   });
 
-  $('.enter-tabs').tabslet();
+  $('.enter-tabs').tabslet({
+    animation: true
+  });
+
+  $('.enter-tabs').on('_before', function () {
+    $('.enter-tabs').find('form').each(function (form) {
+      this.reset();
+      $loginForm.resetForm();
+      $signupForm.resetForm();
+    });
+  });
+
   var $loginForm = $('#login-form').validate({
     rules: {
       loginPassword: {
