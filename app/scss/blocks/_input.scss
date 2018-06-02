@@ -1,12 +1,24 @@
 .input {
-  padding: rem(12);
+  padding: 10px 16px;
   width: 100%;
   outline: none;
-  border: 1px solid transparent;
-  background: #edeef1;
+  border: 1px solid $light-color;
+  background: #ffffff;
   font: inherit;
   font-size: rem(16);
   line-height: normal;
   box-sizing: border-box;
   transition: 0.3s;
+
+  &:hover {
+    background-color: #fafafa;
+  }
+
+  &:focus {
+    background-color: #f7f7f7;
+  }
+
+  &.error {
+    border-color: $danger-color;
+  }
 }

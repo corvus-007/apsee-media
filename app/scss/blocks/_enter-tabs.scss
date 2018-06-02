@@ -1,0 +1,30 @@
+.enter-tabs {
+
+}
+
+.enter-tabs__menu {
+  @include clear-list();
+
+  display: flex;
+}
+
+.enter-tabs__menu-item {
+  flex-grow: 1;
+}
+
+.enter-tabs__menu-link {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  transition: $duration;
+
+  .enter-tabs__menu-item.active & {
+    border-color: $accent-color;
+  }
+}
+
+.enter-tabs__pane {
+
+}

@@ -1,0 +1,28 @@
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.field__label {
+  margin-bottom: 6px;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: rem(16);
+}
+
+.field__control {
+  width: 100%;
+  position: relative;
+}
+
+.field__input {
+
+}
+
+.field__text {
+  margin-top: 5px;
+  font-size: rem(12);
+  line-height: 1.25;
+  color: $muted-color;
+}

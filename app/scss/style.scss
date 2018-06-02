@@ -15,7 +15,10 @@
 // Blocks
 @import "blocks/button";
 @import "blocks/form";
+@import "blocks/checkbox";
 @import "blocks/input";
+@import "blocks/field";
+@import "blocks/submit-button";
 @import "blocks/popup";
 @import "blocks/common-date";
 @import "blocks/get-more";
@@ -30,6 +33,7 @@
 @import "blocks/header-actions";
 @import "blocks/main-nav";
 @import "blocks/main-nav-toggle";
+@import "blocks/error-page";
 @import "blocks/main-layout";
 @import "blocks/main-content";
 @import "blocks/sidebar";
@@ -54,4 +58,6 @@
 @import "blocks/post-incut";
 @import "blocks/main-footer";
 @import "blocks/footer-nav";
+@import "blocks/login-form";
+@import "blocks/enter-tabs";
 @import "blocks/socials";
