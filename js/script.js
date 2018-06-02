@@ -1,5 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   svg4everybody();
+
+  $('[data-fancybox]').fancybox({
+    buttons: [
+    'close'
+    ]
+  });
+
+  $.fancybox.defaults.animationEffect = "zoom";
 
   $('.top-news-carousel').flickity({
     wrapAround: true,
@@ -13,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     animation: true
   });
 
-  $('.enter-tabs').on('_before', function () {
-    $('.enter-tabs').find('form').each(function (form) {
+  $('.enter-tabs').on('_before', function() {
+    $('.enter-tabs').find('form').each(function(form) {
       this.reset();
       $loginForm.resetForm();
       $signupForm.resetForm();
@@ -27,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         minlength: 6
       }
     },
-    submitHandler: function (form) {
+    submitHandler: function(form) {
       console.log('submit login-form');
       var data = $(form).serializeArray();
       var popupStatusLoginTemplate = '';
@@ -37,15 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
         url: form.action,
         data: data
       });
-      response.done(function (responseData) {
+      response.done(function(responseData) {
         console.log('done');
         popupStatusLoginTemplate = '<div class="popup"><h2 class="popup__title">Success!</h2><p>Thank you for registering</p></div>'
       });
-      response.fail(function (responseData) {
+      response.fail(function(responseData) {
         console.log('fail');
         popupStatusLoginTemplate = '<div class="popup"><h2 class="popup__title">Something went wrong</h2><p>Please try again later.</p></div>'
       });
-      response.always(function (responseData) {
+      response.always(function(responseData) {
         console.log('always');
         form.reset();
         $.fancybox.close(true);
@@ -55,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var $signupForm = $('#signup-form').validate({
-    submitHandler: function (form) {
+    submitHandler: function(form) {
       console.log('submit signup-form');
       var data = $(form).serializeArray();
       var popupStatusSignupTemplate = '';
@@ -65,15 +73,15 @@ document.addEventListener('DOMContentLoaded', function () {
         url: form.action,
         data: data
       });
-      response.done(function (responseData) {
+      response.done(function(responseData) {
         console.log('done');
         popupStatusSignupTemplate = '<div class="popup"><h2 class="popup__title">Success!</h2><p>Thank you for registering</p></div>'
       });
-      response.fail(function (responseData) {
+      response.fail(function(responseData) {
         console.log('fail');
         popupStatusSignupTemplate = '<div class="popup"><h2 class="popup__title">Something went wrong</h2><p>Please try again later.</p></div>'
       });
-      response.always(function (responseData) {
+      response.always(function(responseData) {
         console.log('always');
         form.reset();
         $.fancybox.close(true);
@@ -95,6 +103,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-
-
 });
