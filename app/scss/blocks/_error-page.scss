@@ -1,0 +1,41 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-page__inner {
+
+}
+
+.error-page__title {
+  margin: 0;
+  margin-bottom: $gutter;
+  font-weight: 600;
+  font-size: 40vmin;
+  line-height: 0.8;
+  color: $accent-color;
+  user-select: none;
+
+  @include mq-min(768px) {
+    font-size: 30vmin;
+  }
+}
+
+.error-page__description {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $gutter;
+  font-weight: 600;
+  font-size: rem(24);
+  text-transform: uppercase;
+}
+
+.error-page__to-home {
+  padding: 5px;
+  font-weight: 600;
+  font-size: rem(20);
+}
