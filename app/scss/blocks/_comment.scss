@@ -1,0 +1,156 @@
+.comment {
+  display: flex;
+  padding: 5px;
+}
+
+.comment__user-photo {
+  flex-shrink: 0;
+  margin-right: $gutter / 2;
+  align-self: flex-start;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+}
+
+.comment__body {
+
+}
+
+.comment__user-meta {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+  margin-right: -12px;
+  margin-bottom: 5px;
+}
+
+.comment__user-meta-item {
+  margin-right: 12px;
+}
+
+.comment__username {
+  font-weight: 600;
+  font-size: rem(13);
+}
+
+.comment__date {
+  display: flex;
+  align-items: center;
+  font-size: rem(11);
+  color: $muted-color;
+
+  &::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background: url("images/time.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.comment__text {
+  @include clear-mr-edges-elem();
+
+  margin-bottom: 10px;
+  font-size: rem(14);
+  line-height: 1.4;
+}
+
+.comment__actions {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+  margin-right: -12px;
+}
+
+.comment__actions-item {
+  margin-right: 12px;
+}
+
+.comment__vote {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.comment__vote-value {
+  margin-right: 2px;
+  padding-right: 5px;
+  font-size: rem(12);
+  line-height: 1.1;
+  color: #bdbdbd;
+  border-right: 1px solid $light-color;
+}
+
+.comment__vote-button {
+  padding: 5px;
+  font-size: 0;
+  background: none;
+  color: #bdbdbd;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: $duration;
+  outline: none;
+  user-select: none;
+
+  &--like {
+    &:hover,
+    &:focus {
+      color: $success-color;
+    }
+  }
+
+  &--dislike {
+    &:hover,
+    &:focus {
+      color: $danger-color;
+    }
+  }
+}
+
+.comment__vote-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.comment__reply {
+  padding: 5px;
+  font-size: 0;
+  background: none;
+  color: #bdbdbd;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: $duration;
+  outline: none;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+  }
+}
+
+.comment__reply-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.comment__child {
+  margin-top: 15px;
+}

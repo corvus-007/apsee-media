@@ -1,0 +1,23 @@
+.comments-list {
+  @include clear-list();
+
+  margin-bottom: -$gutter / 2;
+
+  &--has-child {
+
+  }
+}
+
+.comments-list__item {
+  margin-bottom: 15px;
+
+  .comments-list--child & {
+    padding-left: 15px;
+    border-left: 1px solid $light-color;
+    transition: border-color $duration;
+
+    &:hover {
+      border-left-color: darken($light-color, 5%);
+    }
+  }
+}

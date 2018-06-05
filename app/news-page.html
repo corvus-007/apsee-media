@@ -102,11 +102,207 @@
           </div>
         </article>
 
-        <section class="main-content common-block">
+        <section class="main-content__section common-block">
           <div class="common-block-header">
             <h2 class="common-block-title">Comments</h2>
           </div>
+          <form class="add-comment-form common-block-body" action="" method="">
+            <div class="field">
+              <div class="field__control">
+                <textarea class="add-comment-form__textarea field__input input input--multiline" name="message" id="field-add-comment-message" rows="4" required placeholder="Add a comment"></textarea>
+              </div>
+            </div>
+            <button class="add-comment-form__submit button" type="submit">Post</button>
+          </form>
           <div class="common-block-body">
+            <ul class="comments-list">
+              <li class="comments-list__item comment">
+                <div class="comment__user-photo">
+                  <img src="https://images.unsplash.com/photo-1517611682873-f735f9c0de28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a5bbc7f0b8e93a38866a052d5875cb&auto=format&fit=crop&w=1147&q=80" alt="">
+                </div>
+                <div class="comment__body">
+                  <ul class="comment__user-meta">
+                    <li class="comment__user-meta-item">
+                      <span class="comment__username">Dinkfrinkle</span>
+                    </li>
+                    <li class="comment__user-meta-item">
+                      <span class="comment__date">2 hours ago</span>
+                    </li>
+                  </ul>
+                  <div class="comment__text">
+                    <p>That was pretty mean of the GS fans chanting MVP to JR Smith while he shot free throws.</p>
+                  </div>
+                  <ul class="comment__actions">
+                    <li class="comment__actions-item">
+                      <div class="comment__vote">
+                        <span class="comment__vote-value">4</span>
+                        <button class="comment__vote-button comment__vote-button--like" type="button" title="Like">
+                          <svg class="comment__vote-icon" width="16" height="16">
+                            <use xlink:href="images/symbols.svg#thumb-up"></use>
+                          </svg>
+                          <span class="visuallyhidden">Like</span>
+                        </button>
+                        <button class="comment__vote-button comment__vote-button--dislike" type="button" title="Dislike">
+                          <svg class="comment__vote-icon" width="16" height="16">
+                            <use xlink:href="images/symbols.svg#thumb-down"></use>
+                          </svg>
+                          <span class="visuallyhidden">Dislike</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="comment__actions-item">
+                      <button class="comment__reply" title="Reply">
+                        <svg class="comment__reply-icon" width="16" height="16">
+                          <use xlink:href="images/symbols.svg#reply"></use>
+                        </svg>
+                        <span class="visuallyhidden">Reply</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="comments-list__item comment">
+                <div class="comment__user-photo">
+                  <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3159b23f37c4f3954e97072e00e975ab&auto=format&fit=crop&w=673&q=80" alt="peterpi">
+                </div>
+                <div class="comment__body">
+                  <ul class="comment__user-meta">
+                    <li class="comment__user-meta-item">
+                      <span class="comment__username">peterpi</span>
+                    </li>
+                    <li class="comment__user-meta-item">
+                      <span class="comment__date">2 hours ago</span>
+                    </li>
+                  </ul>
+                  <div class="comment__text">
+                    <p>Four hours have gone by - and no Jon-Benet Ramsey conspiracy theorists have posted anything?</p>
+                    <p>If I were the cops, on Monday morning when those law offices and Dr. Pitt's office opens, I'd be there with a search warrant to see if any of the doctor's and law firm's clients were connected.</p>
+                  </div>
+                  <ul class="comment__actions">
+                    <li class="comment__actions-item">
+                      <div class="comment__vote">
+                        <span class="comment__vote-value">-4</span>
+                        <button class="comment__vote-button comment__vote-button--like" type="button" title="Like">
+                          <svg class="comment__vote-icon" width="16" height="16">
+                            <use xlink:href="images/symbols.svg#thumb-up"></use>
+                          </svg>
+                          <span class="visuallyhidden">Like</span>
+                        </button>
+                        <button class="comment__vote-button comment__vote-button--dislike" type="button" title="Dislike">
+                          <svg class="comment__vote-icon" width="16" height="16">
+                            <use xlink:href="images/symbols.svg#thumb-down"></use>
+                          </svg>
+                          <span class="visuallyhidden">Dislike</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="comment__actions-item">
+                      <button class="comment__reply" title="Reply">
+                        <svg class="comment__reply-icon" width="16" height="16">
+                          <use xlink:href="images/symbols.svg#reply"></use>
+                        </svg>
+                        <span class="visuallyhidden">Reply</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="comment__child">
+                    <ul class="comments-list comments-list--child">
+                      <li class="comments-list__item comment">
+                        <div class="comment__user-photo">
+                          <img src="https://images.unsplash.com/photo-1503624886539-b1355ee1a745?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=130627d9d7ebf62d9334702ecd0e5fa3&auto=format&fit=crop&w=1050&q=80" alt="Kaplunk13">
+                        </div>
+                        <div class="comment__body">
+                          <ul class="comment__user-meta">
+                            <li class="comment__user-meta-item">
+                              <span class="comment__username">Kaplunk13</span>
+                            </li>
+                            <li class="comment__user-meta-item">
+                              <span class="comment__date">1.5 hours ago</span>
+                            </li>
+                          </ul>
+                          <div class="comment__text">
+                            <p>That was pretty mean of the GS fans chanting MVP to JR Smith while he shot free throws.</p>
+                          </div>
+                          <ul class="comment__actions">
+                            <li class="comment__actions-item">
+                              <div class="comment__vote">
+                                <span class="comment__vote-value">3</span>
+                                <button class="comment__vote-button comment__vote-button--like" type="button" title="Like">
+                                  <svg class="comment__vote-icon" width="16" height="16">
+                                    <use xlink:href="images/symbols.svg#thumb-up"></use>
+                                  </svg>
+                                  <span class="visuallyhidden">Like</span>
+                                </button>
+                                <button class="comment__vote-button comment__vote-button--dislike" type="button" title="Dislike">
+                                  <svg class="comment__vote-icon" width="16" height="16">
+                                    <use xlink:href="images/symbols.svg#thumb-down"></use>
+                                  </svg>
+                                  <span class="visuallyhidden">Dislike</span>
+                                </button>
+                              </div>
+                            </li>
+                            <li class="comment__actions-item">
+                              <button class="comment__reply" title="Reply">
+                                <svg class="comment__reply-icon" width="16" height="16">
+                                  <use xlink:href="images/symbols.svg#reply"></use>
+                                </svg>
+                                <span class="visuallyhidden">Reply</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="comments-list__item comment">
+                        <div class="comment__user-photo">
+                          <img src="https://images.unsplash.com/photo-1506468203959-a06c860af8f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=805efba16467b36acad38c628e34f65d&auto=format&fit=crop&w=634&q=80" alt="Piusxii">
+                        </div>
+                        <div class="comment__body">
+                          <ul class="comment__user-meta">
+                            <li class="comment__user-meta-item">
+                              <span class="comment__username">Piusxii</span>
+                            </li>
+                            <li class="comment__user-meta-item">
+                              <span class="comment__date">1 hour ago</span>
+                            </li>
+                          </ul>
+                          <div class="comment__text">
+                            <p>Four hours have gone by - and no Jon-Benet Ramsey conspiracy theorists have posted anything?</p>
+                            <p>If I were the cops, on Monday morning when those law offices and Dr. Pitt's office opens, I'd be there with a search warrant to see if any of the doctor's and law firm's clients were connected.</p>
+                          </div>
+                          <ul class="comment__actions">
+                            <li class="comment__actions-item">
+                              <div class="comment__vote">
+                                <span class="comment__vote-value">1</span>
+                                <button class="comment__vote-button comment__vote-button--like" type="button" title="Like">
+                                  <svg class="comment__vote-icon" width="16" height="16">
+                                    <use xlink:href="images/symbols.svg#thumb-up"></use>
+                                  </svg>
+                                  <span class="visuallyhidden">Like</span>
+                                </button>
+                                <button class="comment__vote-button comment__vote-button--dislike" type="button" title="Dislike">
+                                  <svg class="comment__vote-icon" width="16" height="16">
+                                    <use xlink:href="images/symbols.svg#thumb-down"></use>
+                                  </svg>
+                                  <span class="visuallyhidden">Dislike</span>
+                                </button>
+                              </div>
+                            </li>
+                            <li class="comment__actions-item">
+                              <button class="comment__reply" title="Reply">
+                                <svg class="comment__reply-icon" width="16" height="16">
+                                  <use xlink:href="images/symbols.svg#reply"></use>
+                                </svg>
+                                <span class="visuallyhidden">Reply</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
           </div>
         </section>
