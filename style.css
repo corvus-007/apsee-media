@@ -1401,11 +1401,12 @@ label.error {
 }
 
 .input {
-  padding: 10px 16px;
   width: 100%;
+  padding: 10px 16px;
   font: inherit;
   font-size: 1rem;
   line-height: normal;
+  vertical-align: middle;
   background: #ffffff;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
@@ -3269,6 +3270,12 @@ label.error {
   height: 48px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.comment__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .comment__user-meta {
