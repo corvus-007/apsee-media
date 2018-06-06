@@ -140,22 +140,44 @@ window.comments = (function () {
     var $currentComment = $(this).closest('.comment');
     var currentCommentId = $currentComment.data('comment-id');
     var $currentCommentBody = $currentComment.children('.comment__body');
+    var $commentChild = $currentCommentBody.children('.comment__child');
 
-    var commentFormTemplate = addCommentForm.cloneNode(true);
-    commentFormTemplate.classList.remove('add-comment-form');
-    commentFormTemplate.classList.add('comment__reply-form');
-    var inputParentCommentId = document.createElement('input')
+    if (!$commentChild.length) {
+      $commentChild = $('<div></div>', {
+        class: 'comment__child'
+      });
+    }
+
+    $currentCommentBody.append($commentChild);
+
+    var commentReplyFormTemplate = addCommentForm.cloneNode(true);
+    commentReplyFormTemplate.classList.remove('add-comment-form');
+    commentReplyFormTemplate.classList.add('comment__reply-form');
+
+    var inputParentCommentId = document.createElement('input');
     inputParentCommentId.type = 'hidden';
     inputParentCommentId.name = 'parentCommentId';
     inputParentCommentId.value = currentCommentId;
-    commentFormTemplate.appendChild(inputParentCommentId);
-    $currentCommentBody.append(commentFormTemplate);
+    commentReplyFormTemplate.appendChild(inputParentCommentId);
 
-    commentFormTemplate.addEventListener('submit', function (event) {
+    $commentChild.append(commentReplyFormTemplate);
+
+    commentReplyFormTemplate.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      var dataCommentForm = collectionCommentDataForm(commentFormTemplate);
-      $(commentFormTemplate).replaceWith(generateCommentElement(dataCommentForm));
+      var dataCommentForm = collectionCommentDataForm(commentReplyFormTemplate);
+      var $commentsListChild = $commentChild.children('.comments-list');
+
+      if (!$commentsListChild.length) {
+        $commentsListChild = $('<ul></ul>', {
+          class: 'comments-list comments-list--child'
+        });
+      }
+
+      $commentChild.append($commentsListChild);
+
+      $commentsListChild.append(generateCommentElement(dataCommentForm));
+      $(commentReplyFormTemplate).remove();
     });
   });
 })();
