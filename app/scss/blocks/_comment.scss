@@ -1,6 +1,6 @@
 .comment {
   display: flex;
-  padding: 5px;
+  padding: 2px;
 }
 
 .comment__user-photo {
@@ -19,7 +19,7 @@
 }
 
 .comment__body {
-
+  flex-grow: 1;
 }
 
 .comment__user-meta {

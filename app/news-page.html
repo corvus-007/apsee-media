@@ -82,6 +82,26 @@
 
             <p>In recent days, Trump has seized on the reports about Halper’s role in the Russia probe, suggesting in tweets that the FBI improperly spied on his campaign. There is no evidence to suggest Halper was inserted into the Trump campaign, but he did engage in a pattern of seeking out and meeting three Trump advisers.</p>
 
+            <div class="post__sidebar post__sidebar--left post-sidebar">
+              <div class="post-related-news">
+                <h3 class="post-related-news__title">Related news</h3>
+                <ul class="post-related-news__list">
+                  <li class="post-related-news__item">
+                    <a href="">I wanted Carson Wentz to go the White House to teach Trump about leadership | Will Bunch</a>
+                  </li>
+                  <li class="post-related-news__item">
+                    <a href="">You can't ruin this for us, Donald. Go Birds | Mike Newall</a>
+                  </li>
+                  <li class="post-related-news__item">
+                    <a href="">Wentz practicing even more in Eagles OTAs</a>
+                  </li>
+                  <li class="post-related-news__item">
+                    <a href="">Wentz practicing even more in Eagles OTAs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <p>On Monday, the conflict was defused – at least temporarily – with the announcement that White House Chief of Staff John Kelly plans to convene a meeting between top law enforcement officials and GOP congressional leaders to “review highly classified and other information” the lawmakers have requested about the source.</p>
 
             <p>Halper’s connections to the intelligence world have been present throughout his career and at Cambridge, where he ran an intelligence seminar that brought together intelligence officials of past and present.</p>
@@ -106,17 +126,17 @@
           <div class="common-block-header">
             <h2 class="common-block-title">Comments</h2>
           </div>
-          <form class="add-comment-form common-block-body" action="" method="">
+          <form class="add-comment-form common-block-body" action="" method="POST">
             <div class="field">
               <div class="field__control">
-                <textarea class="add-comment-form__textarea field__input input input--multiline" name="message" id="field-add-comment-message" rows="4" required placeholder="Add a comment"></textarea>
+                <textarea class="add-comment-form__textarea field__input input input--multiline" name="message" rows="4" required placeholder="Add a comment"></textarea>
               </div>
             </div>
             <button class="add-comment-form__submit button" type="submit">Post</button>
           </form>
           <div class="common-block-body">
             <ul class="comments-list">
-              <li class="comments-list__item comment">
+              <li class="comments-list__item comment" data-comment-id="comment-4577158779">
                 <div class="comment__user-photo">
                   <img src="https://images.unsplash.com/photo-1517611682873-f735f9c0de28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a5bbc7f0b8e93a38866a052d5875cb&auto=format&fit=crop&w=1147&q=80" alt="">
                 </div>
@@ -161,7 +181,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="comments-list__item comment">
+              <li class="comments-list__item comment" data-comment-id="comment-7555510902">
                 <div class="comment__user-photo">
                   <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3159b23f37c4f3954e97072e00e975ab&auto=format&fit=crop&w=673&q=80" alt="peterpi">
                 </div>
@@ -207,7 +227,7 @@
                   </ul>
                   <div class="comment__child">
                     <ul class="comments-list comments-list--child">
-                      <li class="comments-list__item comment">
+                      <li class="comments-list__item comment" data-comment-id="comment-0003160658">
                         <div class="comment__user-photo">
                           <img src="https://images.unsplash.com/photo-1503624886539-b1355ee1a745?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=130627d9d7ebf62d9334702ecd0e5fa3&auto=format&fit=crop&w=1050&q=80" alt="Kaplunk13">
                         </div>
@@ -252,7 +272,7 @@
                           </ul>
                         </div>
                       </li>
-                      <li class="comments-list__item comment">
+                      <li class="comments-list__item comment" data-comment-id="comment-6686199676">
                         <div class="comment__user-photo">
                           <img src="https://images.unsplash.com/photo-1506468203959-a06c860af8f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=805efba16467b36acad38c628e34f65d&auto=format&fit=crop&w=634&q=80" alt="Piusxii">
                         </div>
@@ -303,7 +323,6 @@
                 </div>
               </li>
             </ul>
-
           </div>
         </section>
       </main>
@@ -312,6 +331,53 @@
       @@include('blocks/sidebar.html')
     </div>
   </div>
+  <template id="comment-template" hidden>
+    <li class="comments-list__item comment" data-comment-id="">
+      <div class="comment__user-photo">
+        <img src="https://images.unsplash.com/photo-1506468203959-a06c860af8f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=805efba16467b36acad38c628e34f65d&auto=format&fit=crop&w=634&q=80" alt="">
+      </div>
+      <div class="comment__body">
+        <ul class="comment__user-meta">
+          <li class="comment__user-meta-item">
+            <span class="comment__username"></span>
+          </li>
+          <li class="comment__user-meta-item">
+            <span class="comment__date">1 hour ago</span>
+          </li>
+        </ul>
+        <div class="comment__text">
+          <p></p>
+        </div>
+        <ul class="comment__actions">
+          <li class="comment__actions-item">
+            <div class="comment__vote">
+              <span class="comment__vote-value">1</span>
+              <button class="comment__vote-button comment__vote-button--like" type="button" title="Like">
+                <svg class="comment__vote-icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#thumb-up"></use>
+                </svg>
+                <span class="visuallyhidden">Like</span>
+              </button>
+              <button class="comment__vote-button comment__vote-button--dislike" type="button" title="Dislike">
+                <svg class="comment__vote-icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#thumb-down"></use>
+                </svg>
+                <span class="visuallyhidden">Dislike</span>
+              </button>
+            </div>
+          </li>
+          <li class="comment__actions-item">
+            <button class="comment__reply" title="Reply">
+              <svg class="comment__reply-icon" width="16" height="16">
+                <use xlink:href="images/symbols.svg#reply"></use>
+              </svg>
+              <span class="visuallyhidden">Reply</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </template>
 
   @@include('blocks/main-footer.html')
   @@include('blocks/site-scripts.html')
