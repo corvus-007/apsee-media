@@ -88,67 +88,63 @@
   padding-right: 5px;
   font-size: rem(12);
   line-height: 1.1;
-  color: #bdbdbd;
+  color: #adadad;
   border-right: 1px solid $light-color;
 }
 
 .comment__vote-button {
+  width: 24px;
+  height: 24px;
   padding: 5px;
   font-size: 0;
   background: none;
-  color: #bdbdbd;
   border: none;
   cursor: pointer;
   user-select: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
   transition: $duration;
-  outline: none;
-  user-select: none;
-
-  &--like {
-    &:hover,
-    &:focus {
-      color: $success-color;
-    }
-  }
-
-  &--dislike {
-    &:hover,
-    &:focus {
-      color: $danger-color;
-    }
-  }
-}
-
-.comment__vote-icon {
-  display: block;
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
-}
-
-.comment__reply {
-  padding: 5px;
-  font-size: 0;
-  background: none;
-  color: #bdbdbd;
-  border: none;
-  cursor: pointer;
-  user-select: none;
-  transition: $duration;
+  opacity: 0.5;
   outline: none;
   user-select: none;
 
   &:hover,
   &:focus {
-    color: $base-color;
+    opacity: 1;
+  }
+
+  &--like {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 293.7 293.7'%3E%3Cpath fill='%23232020' d='M292 177.4c0-13.6-11-24.7-24.7-24.7h-1.2a24.7 24.7 0 0 0-13-45.7H161c17.1-31.8 23.3-55.1 29-75 3.4-11.5-1.9-24-13-29.4-12.3-6-25.7-1.7-33 11.6a512.2 512.2 0 0 1-82.8 108.4 54.4 54.4 0 0 0-14.3 25.7H22.1a20.5 20.5 0 0 0-20.5 20.5v79.7c0 11.3 9.2 20.4 20.5 20.4h33a56 56 0 0 0 46.5 24.8h126.1a24.7 24.7 0 0 0 13-45.8h8a24.7 24.7 0 0 0 13-45.7h5.6c13.7 0 24.7-11.1 24.7-24.8z'/%3E%3C/svg%3E%0A");
+  }
+
+  &--dislike {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 293.7 293.7'%3E%3Cpath fill='%23232020' d='M292 116.2c0-13.6-11-24.7-24.7-24.7h-5.5a24.7 24.7 0 0 0-13-45.8h-8a24.7 24.7 0 0 0-13-45.7H101.5A56 56 0 0 0 55 24.7h-33A20.5 20.5 0 0 0 1.6 45.2v79.6c0 11.4 9.2 20.5 20.5 20.5H47a54.4 54.4 0 0 0 14.3 25.8 512.1 512.1 0 0 1 82.7 108.4c7.4 13.2 20.8 17.5 33.2 11.5a24.8 24.8 0 0 0 13-29.3c-5.8-19.9-12-43.3-29.1-75h92a24.7 24.7 0 0 0 13.1-45.8h1.2c13.7 0 24.7-11 24.7-24.7z'/%3E%3C/svg%3E%0A");
   }
 }
 
-.comment__reply-icon {
-  display: block;
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
+.comment__reply {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  font-size: 0;
+  background: none;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 384'%3E%3Cpath fill='%23232020' d='M149.3 117.3V32L0 181.3l149.3 149.4v-87.5C256 243.2 330.7 277.3 384 352c-21.3-106.7-85.3-213.3-234.7-234.7z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  user-select: none;
+  transition: $duration;
+  opacity: 0.5;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .comment__child {
