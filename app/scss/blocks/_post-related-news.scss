@@ -1,0 +1,33 @@
+.post-related-news {
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: $primary-font;
+}
+
+.post-related-news__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: rem(20px);
+}
+
+.post-related-news__list {
+  @include clear-list();
+
+  margin-bottom: -15px;
+}
+
+.post-related-news__item {
+  margin-bottom: 15px;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $base-color;
+    transition: $duration;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

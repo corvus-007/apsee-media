@@ -26,3 +26,25 @@
 .post__counters {
   @include clear-list();
 }
+
+.post__sidebar {
+  box-sizing: border-box;
+
+  @include mq-min(768px) {
+    max-width: 300px;
+
+    &--left {
+      float: left;
+      margin-top: 1.5rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &--right {
+      float: right;
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
