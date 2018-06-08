@@ -124,7 +124,7 @@ window.comments = (function () {
   addCommentForm.addEventListener('submit', function (event) {
     event.preventDefault();
     var dataCommentForm = collectionCommentDataForm(addCommentForm);
-    commentsList.appendChild(generateCommentElement(dataCommentForm));
+    $(commentsList).prepend(generateCommentElement(dataCommentForm));
   });
 
   function generateCommentElement(data) {
