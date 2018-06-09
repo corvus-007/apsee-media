@@ -2921,6 +2921,42 @@ label.error {
   font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
 }
 
+.feed-last-news {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: -20px;
+}
+
+.feed-last-news__item {
+  margin-bottom: 20px;
+}
+
+.feed-last-news__wraplink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #232020;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+
+.feed-last-news__wraplink:hover, .feed-last-news__wraplink:focus {
+  color: #287ab7;
+}
+
+.feed-last-news__title {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Libre Baskerville", "PT Serif", "Cambria", "Georgia", serif;
+}
+
 .feed-comments-forum {
   padding: 0;
   margin: 0;
