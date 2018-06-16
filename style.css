@@ -109,7 +109,8 @@ body {
   font-size: 100%;
   font-weight: normal;
   line-height: 1.4;
-  background-color: #dce4e9;
+  background: #dce4e9 url("images/bg-site.png") no-repeat 100px 40px;
+  background-size: cover;
   color: #232020;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -2549,7 +2550,7 @@ label.error {
     width: calc((100% - 30px * 2 - 0.01px) / 3);
     margin-right: 30px;
   }
-  .news-preview-items__item:nth-child(3n + 1) {
+  .news-preview-items__item:nth-child(3n) {
     margin-right: 0;
   }
   .news-preview-items__item--special {
