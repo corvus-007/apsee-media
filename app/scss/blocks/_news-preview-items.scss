@@ -9,6 +9,7 @@
 .news-preview-items__item {
   margin-bottom: $gutter;
 
+
   @include mq-range(568px, 666px) {
     @include calc-column-width(2);
   }
@@ -21,7 +22,7 @@
       margin-right: 0;
     }
 
-    &:nth-child(1) {
+    &--special {
       width: 100%;
       margin-right: 0;
     }
