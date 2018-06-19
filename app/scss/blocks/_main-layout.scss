@@ -1,3 +1,5 @@
+// 1. Если котент без переноса, то основная колонка растягивается за пределы допустимой ширины, фикс это исправляет
+
 .main-layout {
   @include make-container();
 
@@ -25,6 +27,7 @@
 
 .main-layout__main {
   margin-bottom: $gutter;
+  min-width: 1px; // 1
 
   @include mq-min(992px) {
     margin-bottom: 0;
