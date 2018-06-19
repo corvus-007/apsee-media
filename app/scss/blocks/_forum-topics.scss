@@ -1,0 +1,10 @@
+.forum-topics {
+  @include clear-list();
+}
+
+.forum-topics__item {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $light-color;
+}

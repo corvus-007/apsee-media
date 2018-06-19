@@ -89,7 +89,7 @@
     margin-right: auto;
   }
 
-  & > * + *:not(li) {
+  & > * + *:not(li):not(.post__sidebar) {
     margin-top: 1.5rem;
     margin-bottom: 0;
   }
