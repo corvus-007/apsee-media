@@ -9,18 +9,12 @@
 .news-preview-items__item {
   margin-bottom: $gutter;
 
-
   @include mq-range(568px, 666px) {
     @include calc-column-width(2);
   }
 
   @include mq-min(667px) {
-    width: calc((100% - #{$gutter} * #{3 - 1} - 0.01px) / #{3}); // #1
-    margin-right: $gutter;
-
-    &:nth-child(#{3}n) {
-      margin-right: 0;
-    }
+    @include calc-column-width(3);
 
     &--special {
       width: 100%;
