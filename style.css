@@ -3731,8 +3731,9 @@ label.error {
   margin: 0;
   margin-top: 2px;
   margin-bottom: 8px;
-  line-height: 1.15;
+  font-weight: 600;
   font-size: 1.1875rem;
+  line-height: 1.15;
 }
 
 .forum-topic__title a {
@@ -3740,7 +3741,7 @@ label.error {
 }
 
 .forum-topic__text {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 0.9375rem;
 }
 
