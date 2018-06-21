@@ -1,0 +1,21 @@
+.scroll-to-top {
+  position: fixed;
+  right: $gutter;
+  bottom: $gutter;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: url("images/arrow-up-bold-circle.svg");
+  opacity: 0;
+  outline: none;
+  pointer-events: none;
+  transition: $duration;
+  cursor: pointer;
+  mix-blend-mode: luminosity;
+
+  &--showed {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

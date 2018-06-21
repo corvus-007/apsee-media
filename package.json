@@ -28,6 +28,7 @@
     "@fancyapps/fancybox": "^3.3.5",
     "flickity": "^2.1.1",
     "jquery-validation": "^1.17.0",
+    "jquery.scrollto": "^2.1.2",
     "svg4everybody": "^2.1.9",
     "tabslet": "^1.7.3"
   }

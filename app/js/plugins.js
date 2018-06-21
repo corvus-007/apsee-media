@@ -3,3 +3,4 @@
 //=require ../../node_modules/flickity/dist/flickity.pkgd.min.js
 //=require ../../node_modules/tabslet/jquery.tabslet.min.js
 //=require ../../node_modules/jquery-validation/dist/jquery.validate.min.js
+//=require ../../node_modules/jquery.scrollto/jquery.scrollTo.min.js
