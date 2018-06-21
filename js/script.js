@@ -7,6 +7,25 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
   });
 
+  var $scrollToTopBtn = $('.scroll-to-top');
+  var viewportHeight = document.documentElement.clientHeight;
+
+
+  $scrollToTopBtn.on('click', function (event) {
+    event.preventDefault();
+    $.scrollTo(0, 500);
+  });
+
+  function onWindowScroll() {
+    if (pageYOffset > viewportHeight / 2) {
+      $scrollToTopBtn.addClass('scroll-to-top--showed');
+    } else {
+      $scrollToTopBtn.removeClass('scroll-to-top--showed');
+    }
+  }
+
+  window.addEventListener('scroll', onWindowScroll);
+
   $.fancybox.defaults.animationEffect = "zoom";
 
   $('.top-news-carousel').flickity({
