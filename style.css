@@ -1314,6 +1314,22 @@ body.compensate-for-scrollbar {
   background-color: #216496;
 }
 
+.button--link {
+  color: #232020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.button--link:hover, .button--link:focus {
+  color: #232020;
+  background-color: rgba(228, 228, 228, 0.5);
+}
+
+.button--link:active {
+  color: #232020;
+  background-color: #e4e4e4;
+}
+
 .button__icon {
   width: 22px;
   height: 22px;
@@ -1467,8 +1483,15 @@ label.error {
 .field__label {
   margin-bottom: 6px;
   margin-right: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
+}
+
+.field--required .field__label::after {
+  content: "*";
+  font-size: 0.625rem;
+  vertical-align: super;
+  color: #fd0d4d;
 }
 
 .field__control {
@@ -3802,6 +3825,26 @@ label.error {
 .forum__actions-panel {
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 10px;
+}
+
+.create-topic-form__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.create-topic-form__to-cancel {
+  margin-right: 30px;
+}
+
+.create-topic-form__to-submit {
+  width: auto;
 }
 
 .main-footer {
