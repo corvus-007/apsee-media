@@ -31,6 +31,23 @@
     color: #ffffff;
     background-color: darken($accent-color, 8%);
   }
+
+  &--link {
+    color: $base-color;
+    background-color: transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+      background-color: rgba($light-color, 0.5);
+    }
+
+    &:active {
+      color: $base-color;
+      background-color: rgba($light-color, 1);
+    }
+  }
 }
 
 .button__icon {
