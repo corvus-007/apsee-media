@@ -1,0 +1,17 @@
+.create-topic-form {
+
+}
+
+.create-topic-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.create-topic-form__to-cancel {
+  margin-right: $gutter;
+}
+
+.create-topic-form__to-submit {
+  width: auto;
+}

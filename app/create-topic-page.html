@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Create topic – APSEE MEDIA</title> <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  @@include('blocks/main-header.html')
+  @@include('blocks/main-nav.html')
+
+  <div class="main-layout">
+    <div class="main-layout__row">
+      <ul class="main-layout__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Politics and geopolitics</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-layout__row">
+      <main class="main-layout__main main-content">
+        <article class="main-content__section create-topic common-block">
+          <div class="common-block-header">
+            <h1 class="common-block-title">Create new topic</h1>
+          </div>
+          <div class="common-block-body">
+            <form class="create-topic-form" action="" method="post">
+              <div class="field field--required">
+                <label class="field__label" for="filed-topicTitle">Title</label>
+                <div class="field__control">
+                  <input class="field__input input" type="text" id="filed-topicTitle" name="topicTitle" required>
+                </div>
+              </div>
+              <div class="field field--required">
+                <label class="field__label" for="filed-topicMessage"></label>
+                <div class="field__control">
+                  <textarea class="field__input input input--multiline" id="filed-topicMessage" name="topicMessage" rows="4" required></textarea>
+                </div>
+              </div>
+              <div class="create-topic-form__actions">
+                <a class="create-topic-form__to-cancel button button--link" href="forum-page.html">Cancel</a>
+                <button class="create-topic-form__to-submit button">Submit Topic</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </main>
+
+      <!-- Sidebar -->
+      @@include('blocks/sidebar.html')
+    </div>
+  </div>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>
