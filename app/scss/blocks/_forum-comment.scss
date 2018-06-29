@@ -1,0 +1,40 @@
+.forum-comment {
+  display: flex;
+  border: 1px solid rgba($light-color, 0.5);
+  box-shadow: 0 2px 14px -6px rgba(#000, 0.5);
+  background-color: #fefefe;
+
+  &--question {
+    background-color: #fafafa;
+    border-color: rgba($accent-color, 0.25);
+  }
+}
+
+.forum-comment__author {
+  width: 180px;
+  flex-shrink: 0;
+  font-weight: 500;
+  background-color: rgba($light-color, 0.5);
+  box-sizing: border-box;
+}
+
+.forum-comment__body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.forum-comment__posted {
+  margin-bottom: 5px;
+}
+
+.forum-comment__text {
+  @include clear-mr-edges-elem();
+
+  font-size: rem(15);
+}
+
+.forum-comment__controls {
+  margin-top: auto;
+  border-top: 1px solid rgba($light-color, 0.5);
+}

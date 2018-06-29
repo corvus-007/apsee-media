@@ -1,0 +1,15 @@
+.forum-comment-controls {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.forum-comment-controls__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -122,4 +122,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+
+  var $fieldAddComment = $('#field-add-comment');
+
+  $('.js-forum-comment-to-quote').on('click', function(event) {
+    event.preventDefault();
+    $fieldAddComment.focus();
+  });
 });
