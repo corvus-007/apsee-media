@@ -7,8 +7,15 @@
 .field__label {
   margin-bottom: 6px;
   margin-right: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-size: rem(16);
+
+  .field--required &::after {
+    content: "*";
+    font-size: rem(10);
+    vertical-align: super;
+    color: $danger-color;
+  }
 }
 
 .field__control {
