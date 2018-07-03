@@ -1,4 +1,4 @@
-.checkbox {
+.radiobox {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,11 +12,11 @@
   }
 }
 
-.checkbox__input {
+.radiobox__input {
   @include visuallyhidden();
 }
 
-.checkbox__indicator {
+.radiobox__indicator {
   padding-left: 25px;
 
   &::before {
@@ -27,22 +27,23 @@
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
-    background-size: 12px;
+    background-size: 6px;
     background-position: center;
     border: 1px solid;
+    border-radius: 50%;
     transition: $duration * 1.5;
   }
 
-  .checkbox__input:hover ~ &,
-  .checkbox__input:focus ~ & {
+  .radiobox__input:hover ~ &,
+  .radiobox__input:focus ~ & {
     &::before {
       border-color: $accent-color;
     }
   }
 
-  .checkbox__input:checked ~ & {
+  .radiobox__input:checked ~ & {
     &::before {
-      background-image: url("images/checked.svg");
+      background-image: url("images/radiobox.svg");
       border-color: $accent-color;
     }
   }

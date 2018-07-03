@@ -1,0 +1,16 @@
+.fields-group {
+  margin-bottom: 15px;
+
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.fields-group__item {
+  margin-bottom: 8px;
+
+  .fields-group--inline & {
+    padding-right: 15px;
+  }
+}
