@@ -1357,7 +1357,7 @@ label.error {
   display: flex;
 }
 
-.form-actions--align-right {
+.form-actions--justify-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
